@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+/*===== Color variables =====*/
+
+$colorText: #000000;
+
+$colorPrice: #1c1d1d;
+
+$colorPriceSavings: #ff4e4e;
+
+$colorPrimary: #b86028;
+
+$colorSecondary: #f5f3e7;
+
+$colorTertiary: #006197;
+
+/*===== Typography =====*/
+
+@font-face {
+  font-family: "Barlow SC";
+  src: url("../../public/static/fonts/barlow/barlowsemicondensed-bold-webfont.woff2")
+      format("woff2"),
+    url("../../public/static/fonts/barlow/barlowsemicondensed-bold-webfont.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow SC";
+  src: url("../../public/static/fonts/barlow/barlowsemicondensed-regular-webfont.woff2")
+      format("woff2"),
+    url("../../public/static/fonts/barlow/barlowsemicondensed-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*===== Global Styles =====*/
+
+body * {
+  font-family: "Barlow SC";
+}
+
+/*===== Header =====*/
+
+header {
+  min-height: 10vh;
+  color: $colorPrimary;
+  background-color: $colorSecondary;
+  .nav-links {
+    list-style: none;
+    a {
+      color: $colorPrimary;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .nav-icon {
+    height: 24px;
+    width: 24px;
+  }
+  li {
+    position: relative;
+    &:hover .hover-accent {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  .hover-accent {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    background-color: $colorPrimary;
+    transition: width 0.5s ease-in-out;
+  }
+}
+
+/*===== Hero =====*/
+
+.hero {
+  position: relative;
+  color: $colorSecondary;
+  min-height: 50vw;
+  width: 100%;
+  overflow: hidden;
+  &:hover {
+    color: $colorSecondary;
+    text-decoration: none;
+  }
+  .hero-title {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-shadow: 0.1rem 0.1rem 1rem rgba($color: #000000, $alpha: 0.5);
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 3.5rem;
+    }
+  }
+  .hero-subtitle {
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+    }
+    @media (min-width: 992px) {
+      font-size: 1.5rem;
+    }
+  }
+  .hero-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    * {
+      height: 100%;
+    }
+  }
+  button {
+    color: $colorSecondary;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: $colorPrimary;
+    border: none;
+  }
+}
+
+/*===== CTA =====*/
+
+.cta-background {
+  color: $colorPrimary;
+  background-color: $colorSecondary;
+  .primary-text {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .secondary-text {
+    font-size: 2rem;
+  }
+  button {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: $colorSecondary;
+    background-color: $colorPrimary;
+    border: none;
+  }
+}
+
+/*===== Text =====*/
+
+.text-background {
+  background-color: $colorSecondary;
+  .text-content {
+    color: $colorTertiary;
+    font-size: 2rem;
+  }
+}
+
+/*===== Text Box =====*/
+
+.text-box-background {
+  color: $colorPrimary;
+  .text-box-title {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .text-box-content {
+    font-size: 3rem;
+  }
+}
+
+/*===== Picture + Text =====*/
+
+.picture-text-background {
+  background-color: $colorSecondary;
+  color: $colorTertiary;
+  .image > * {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  button {
+    color: $colorSecondary;
+    background-color: $colorTertiary;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/*===== Picture + Form =====*/
+
+.picture-form-container {
+  position: relative;
+  color: $colorPrimary;
+  overflow: hidden;
+  .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    & > * {
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .description {
+    font-size: 1.25rem;
+  }
+  .form {
+    background-color: $colorSecondary;
+  }
+  .spacer {
+    height: 20rem;
+  }
+  input {
+    color: $colorPrimary;
+    background-color: $colorSecondary;
+    border: none;
+    border-bottom: 2px solid $colorPrimary;
+    caret-color: $colorPrimary;
+    &::-webkit-input-placeholder {
+      color: $colorPrimary;
+    }
+    &:-ms-input-placeholder {
+      color: $colorPrimary;
+    }
+    ::-moz-placeholder {
+      color: $colorPrimary;
+    }
+    &::placeholder {
+      color: $colorPrimary;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    right: 0;
+    color: $colorPrimary;
+    background: none;
+    border: none;
+    border-bottom: 2px solid $colorPrimary;
+    transition: all 0.2s linear;
+    &:hover {
+      color: $colorSecondary;
+      background-color: $colorPrimary;
+    }
+  }
+}
+
+/*===== Collections =====*/
+
+#collections {
+  a {
+    color: $colorPrice;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .collection:hover {
+    .quick-view {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .collection-image {
+      display: none;
+    }
+    .collection-alt-image {
+      display: block;
+    }
+  }
+  .image-container {
+    position: relative;
+  }
+  .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $colorSecondary;
+    background-color: $colorPrice;
+    z-index: 1;
+  }
+  .quick-view {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    color: $colorSecondary;
+    background-color: $colorPrimary;
+    transform: translateY(5px);
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+  }
+  .collection-alt-image {
+    display: none;
+  }
+  .product-title {
+    color: $colorPrimary;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .brand {
+    letter-spacing: 0.2rem;
+  }
+  .original-price {
+    text-decoration: line-through;
+  }
+  .savings-price {
+    color: $colorPriceSavings;
+  }
+}
+
+/*===== Reviews =====*/
+
+#reviews {
+  background-color: $colorSecondary;
+  color: $colorTertiary;
+  .review {
+    height: 18rem;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+    }
+    &.expanded {
+      height: auto;
+    }
+  }
+  .author {
+    font-size: 2rem;
+  }
+  .quote {
+    font-size: 3rem;
+  }
+  .press-link {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-color: $colorTertiary;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .review-selector {
+    * {
+      height: 10px;
+      width: 10px;
+      border: 1px solid $colorTertiary;
+      border-radius: 50%;
+      &:hover {
+        background-color: $colorTertiary;
+        cursor: pointer;
+      }
+    }
+    .selected {
+      background-color: $colorTertiary;
+    }
+  }
+  .text-fade {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    background: linear-gradient(rgba($colorSecondary, 0), $colorSecondary);
+  }
+}
+
+/*===== Footer =====*/
+
+footer {
+  font-size: 1.2rem;
+  color: $colorSecondary;
+  background-color: $colorPrimary;
+  .nav-links {
+    list-style: none;
+    a {
+      color: $colorSecondary;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-heading {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+  }
+  .address {
+    a {
+      color: $colorSecondary;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .social-links > * {
+    width: 32px;
+    height: 32px;
+  }
+  input {
+    color: $colorSecondary;
+    background-color: $colorPrimary;
+    border: none;
+    border-bottom: 2px solid $colorSecondary;
+    caret-color: $colorSecondary;
+    &::-webkit-input-placeholder {
+      color: $colorSecondary;
+    }
+    &:-ms-input-placeholder {
+      color: $colorSecondary;
+    }
+    ::-moz-placeholder {
+      color: $colorSecondary;
+    }
+    &::placeholder {
+      color: $colorSecondary;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    right: 0;
+    color: $colorSecondary;
+    background: none;
+    border: none;
+    border-bottom: 2px solid $colorSecondary;
+  }
+}

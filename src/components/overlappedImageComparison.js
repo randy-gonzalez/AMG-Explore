@@ -1,4 +1,5 @@
 import React from 'react'
+import section2Bbq from '../images/section-2-bbq.png';
 
 const OverlappedImageComparison = () => (
 
@@ -13,7 +14,7 @@ const OverlappedImageComparison = () => (
             The American Muscle Grill is redefining outdoor living for 70% less than Kalamazoo.
             </p>
         </div>
-        <img className="section2-img" src="src/images/section-2-bbq.png" />
+        <img src={section2Bbq} className='section2-img' />
       </div>
       <aside className="sidebar col-3 media-heading">
         <p className="sidebar-text">IN COMPARISON,

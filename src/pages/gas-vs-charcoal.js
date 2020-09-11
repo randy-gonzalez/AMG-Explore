@@ -10,7 +10,7 @@ import Text from "../components/text"
 import TextBox from "../components/textBox"
 import PictureTextLeft from "../components/pictureTextLeft"
 import PictureTextRight from "../components/pictureTextRight"
-import PictureForm from "../components/pictureForm"
+import PictureForm from "../components/pictureForm";
 
 const heroData = {
   image: "hero.jpg",

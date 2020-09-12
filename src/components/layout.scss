@@ -201,7 +201,7 @@ header {
  background-color: white;
 }
 .section8-img-1{
-margin-left: -12rem;
+margin-left: -14rem;
 margin-bottom:28rem;
 margin-top: 6rem;
 
@@ -238,10 +238,8 @@ height: 22%;
 }
 
 
-
 .text-box{
   background-color: rgb(246, 244, 235)
-
 }
 
 
@@ -290,6 +288,28 @@ height: 22%;
   color: rgb(170, 170, 170)
 }
 
+// STALLONE VIDEO MODAL CSS
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 
 /*===== CTA =====*/
 

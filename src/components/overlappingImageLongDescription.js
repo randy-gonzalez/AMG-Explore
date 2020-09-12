@@ -1,5 +1,6 @@
 import React from 'react';
-
+import grillingSteaks from '../images/AMG-54-Father-Mother-Son-Steaks-Grilling-Lifestyle.png';
+import steaks from '../images/steaks.png';
 const OverlappingImageLongDescription = () => (
   <section className="container section8 p-5">
     <div className="d-flex flex-row justify-content-around">
@@ -11,8 +12,8 @@ const OverlappingImageLongDescription = () => (
         WITH THE AMERICAN MUSCLE GRILL
           FROM SUMMERSET GRILLS</p>
         <div className=" d-flex section8-img-container">
-          <img src="./images/AMG-54-Father-Mother-Son-Steaks-Grilling-Lifestyle.png" className="section8-img-1 " />
-          <img src="./images/steaks.png" className="section8-img-2" />
+          <img src={grillingSteaks} className="section8-img-1 " />
+          <img src={steaks} className="section8-img-2 " />
 
         </div>
       </div>

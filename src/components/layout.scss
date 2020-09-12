@@ -131,7 +131,7 @@ header {
 // KALAMAZOO LANDING PAGE
 /* SECTION 1 */
 .section1{
- background-color: $colorTertiary;
+ background-image: url('../images/Hero-Banner.png');
  background-size: cover;
  background-repeat: no-repeat;
  height: 25rem;
@@ -191,11 +191,7 @@ header {
  background-color: rgb(0, 108, 158);
 
 }
-/* SECTION 6 */
-.section6{
- background-color: orange;
-height: 325px;;
-}
+
 /* SECTION 7 */
 .section7{
  background-color: rgb(244, 244, 231);
@@ -205,7 +201,7 @@ height: 325px;;
  background-color: white;
 }
 .section8-img-1{
-margin-left: -11rem;
+margin-left: -12rem;
 margin-bottom:28rem;
 margin-top: 6rem;
 
@@ -274,7 +270,7 @@ height: 22%;
 }
 
 .video-placeholder-image{
-  background-color: blue;
+  background-image: url('../images/video-placeholder.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 25rem;

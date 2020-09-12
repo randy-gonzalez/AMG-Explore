@@ -1,9 +1,10 @@
 import React from 'react';
+import outdoorGrill from '../images/process-outdoor-grill.png'
 
 const Process = () => (
   <section className="container section7 ">
     <div className="text-center image row">
-      <img src="./images/process-outdoor-grill.png" alt="" srcset="" className="img-fluid" />
+      <img src={outdoorGrill} alt="" srcset="" className="img-fluid" />
     </div>
     <div className="d-flex flex-row justify-content-around brown-text">
       <h2 className="mt-4">THE PROCESS</h2>

@@ -1,4 +1,5 @@
 import React from 'react';
+import checkMarkImage from '../images/check-mark.png'
 
 const ThreeCheckBoxComparison = () => (
   <section className="container section3">
@@ -9,7 +10,7 @@ const ThreeCheckBoxComparison = () => (
     <div className="d-flex flex-row justify-content-around mt-5">
       <div className="  flex-column d-flex text-center">
         <div className="text-center">
-          <img src="./images/check-mark.png" alt="" srcset="" className="check-mark" />
+          <img src={checkMarkImage} alt="" srcset="" className="check-mark" />
         </div>
 
         <strong className="mt-3 checkmark-text">BIGGER</strong>
@@ -17,7 +18,7 @@ const ThreeCheckBoxComparison = () => (
       </div>
       <div className="  flex-column d-flex text-center">
         <div className="text-center">
-          <img src="./images/check-mark.png" alt="" srcset="" className="check-mark" />
+          <img src={checkMarkImage} alt="" srcset="" className="check-mark" />
         </div>
 
         <strong className="mt-3 checkmark-text">BETTER</strong>
@@ -26,7 +27,7 @@ const ThreeCheckBoxComparison = () => (
 
       <div className="  d-flex flex-column text-center">
         <div className="text-center">
-          <img src="./images/check-mark.png" alt="" srcset="" className="check-mark" />
+          <img src={checkMarkImage} alt="" srcset="" className="check-mark" />
         </div>
         <strong className="mt-3 checkmark-text">DONE</strong>
         <p className="mt-3 checkmark-text">up to 54" Grilling Surface vs 48" 110,000 Total BTUs vs 100,000</p>

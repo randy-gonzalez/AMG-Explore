@@ -4,8 +4,9 @@ import HeroBlue from '../components/heroBlue';
 import OverlappingImageComparison from '../components/overlappedImageComparison';
 import ThreeCheckBoxComparison from '../components/threeCheckBoxComparison'
 import OverlappingImageLongDescription from '../components/overlappingImageLongDescription';
-import PictureTextLeft from '../components/pictureTextLeft';
-import PictureTextRight from '../components/pictureTextRight';
+import PictureTextLeftHighStandard from '../components/pictureTextLeftHighStandard';
+import PictureTextRightFire from '../components/pictureTextRightFire';
+import PictureTextLeftStar from '../components/pictureTextLeftStar';
 import FeatureByFeatureComparison from '../components/featureByFeatureComparison';
 import TextBox from '../components/textBox';
 import Collections from '../components/collections';
@@ -72,24 +73,28 @@ const AmgVsKalamazooLandingPage = () => (
     <OverlappingImageComparison />
     <ThreeCheckBoxComparison />
 
-    <PictureTextLeft
+    <PictureTextLeftHighStandard
+
       image={pictureTextData1.image}
       primaryText={pictureTextData1.primaryText}
       secondaryText={pictureTextData1.secondaryText}
       buttonText={pictureTextData1.buttonText}
     />
-    <PictureTextRight
+    <PictureTextRightFire
       image={pictureTextData2.image}
       primaryText={pictureTextData2.primaryText}
       secondaryText={pictureTextData2.secondaryText}
       buttonText={pictureTextData2.buttonText}
     />
-    <PictureTextLeft
+
+    <PictureTextLeftStar
+
       image={pictureTextData3.image}
       primaryText={pictureTextData3.primaryText}
       secondaryText={pictureTextData3.secondaryText}
       buttonText={pictureTextData3.buttonText}
     />
+
     <FeatureByFeatureComparison />
     <TextBox
       primaryText={textBoxData.primaryText}

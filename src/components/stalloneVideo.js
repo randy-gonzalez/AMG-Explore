@@ -22,15 +22,9 @@ const StalloneVideo = () => {
     element.innerHTML = ""
 
   }
-  document.addEventListener('load', () => {
-    const modal = document.getElementById('modal');
-    modal.addEventListener('keydown', event => {
-      if (event.keyCode == 27) {
-        modal.classList.remove('show');
-        console.log('iran')
-      }
-    })
-  })
+
+
+
   return (
     <section className="container section11">
       <div className="container video-placeholder-image mt-5 mb-5 text-light text-center p-5">

@@ -111,6 +111,7 @@ const AmgVsKalamazooLandingPage = () => (
       buttonText={pictureFormData.buttonText}
     />
     <StalloneVideo />
+
     <Cta
       buttonAddress={ctaData2.buttonAddress}
       primaryText={ctaData2.primaryText}

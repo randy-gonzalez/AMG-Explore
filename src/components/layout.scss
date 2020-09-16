@@ -290,7 +290,15 @@ height: 22%;
 }
 
 // STALLONE VIDEO MODAL CSS
+.show{
+  display: block;
 
+}
+
+.modal{
+  background-color: rgba($color: #dddddd, $alpha: .5)
+
+}
 
 /*===== CTA =====*/
 

@@ -6,6 +6,7 @@ const PictureTextRightFire = ({
   primaryText,
   secondaryText,
   buttonText,
+  buttonAddress
 }) => (
     <div className="picture-text-background py-4">
       <div className="container">
@@ -20,9 +21,11 @@ const PictureTextRightFire = ({
               </div>
               <p className="title text-uppercase mt-5">{primaryText}</p>
               <p className="description">{secondaryText}</p>
-              <button className="text-uppercase mt-4 py-2 px-3">
-                {buttonText}
-              </button>
+              <a href={buttonAddress}>
+                <button className="text-uppercase mt-4 py-2 px-3">
+                  {buttonText}
+                </button>
+              </a>
             </div>
           </div>
         </div>

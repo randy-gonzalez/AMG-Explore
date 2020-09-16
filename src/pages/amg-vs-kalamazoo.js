@@ -17,6 +17,7 @@ import StalloneVideo from '../components/stalloneVideo';
 import Cta from '../components/cta';
 
 const pictureTextData1 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-cart.jpg",
   primaryText: "One Grill To Last",
   secondaryText:
@@ -25,6 +26,7 @@ const pictureTextData1 = {
 }
 
 const pictureTextData2 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-fuel.jpg",
   primaryText: "ONE GRILL THAT BURNS ANY FUEL",
   secondaryText:
@@ -33,6 +35,7 @@ const pictureTextData2 = {
 }
 
 const pictureTextData3 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-buttons.jpg",
   primaryText: "ONE GRILL WITH UNMATCHED VALUE",
   secondaryText:
@@ -74,13 +77,14 @@ const AmgVsKalamazooLandingPage = () => (
     <ThreeCheckBoxComparison />
 
     <PictureTextLeftHighStandard
-
+      buttonAddress={pictureTextData1.buttonAddress}
       image={pictureTextData1.image}
       primaryText={pictureTextData1.primaryText}
       secondaryText={pictureTextData1.secondaryText}
       buttonText={pictureTextData1.buttonText}
     />
     <PictureTextRightFire
+      buttonAddress={pictureTextData2.buttonAddress}
       image={pictureTextData2.image}
       primaryText={pictureTextData2.primaryText}
       secondaryText={pictureTextData2.secondaryText}
@@ -88,7 +92,7 @@ const AmgVsKalamazooLandingPage = () => (
     />
 
     <PictureTextLeftStar
-
+      buttonAddress={pictureTextData3.buttonAddress}
       image={pictureTextData3.image}
       primaryText={pictureTextData3.primaryText}
       secondaryText={pictureTextData3.secondaryText}

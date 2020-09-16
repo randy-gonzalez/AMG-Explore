@@ -68,6 +68,7 @@ const textBoxData = {
 }
 
 const pictureTextData1 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-cart.jpg",
   primaryText: "Luxury grilling experience at an affordable price",
   secondaryText:
@@ -76,6 +77,7 @@ const pictureTextData1 = {
 }
 
 const pictureTextData2 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-fuel.jpg",
   primaryText: "Charcoal ready in 3 minutes",
   secondaryText:
@@ -84,6 +86,7 @@ const pictureTextData2 = {
 }
 
 const pictureTextData3 = {
+  buttonAddress: "https://americanmadegrills.com/collections/all",
   image: "product-amg-54-buttons.jpg",
   primaryText: "Award winning customer service + lifetime warranty",
   secondaryText:
@@ -121,18 +124,21 @@ const LandingPage = () => (
     <Collections />
     <Text text={textData} />
     <PictureTextLeft
+      buttonAddress={pictureTextData1.buttonAddress}
       image={pictureTextData1.image}
       primaryText={pictureTextData1.primaryText}
       secondaryText={pictureTextData1.secondaryText}
       buttonText={pictureTextData1.buttonText}
     />
     <PictureTextRight
+      buttonAddress={pictureTextData2.buttonAddress}
       image={pictureTextData2.image}
       primaryText={pictureTextData2.primaryText}
       secondaryText={pictureTextData2.secondaryText}
       buttonText={pictureTextData2.buttonText}
     />
     <PictureTextLeft
+      buttonAddress={pictureTextData3.buttonAddress}
       image={pictureTextData3.image}
       primaryText={pictureTextData3.primaryText}
       secondaryText={pictureTextData3.secondaryText}

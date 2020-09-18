@@ -172,10 +172,41 @@ header {
   display: flex;
 }
 .sidebar{
-
+  margin: auto;
   background-color: rgb(244, 244, 231);
   color: rgb(195, 139, 98)
 }
+.sidebarText{
+  font-size: x-large;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.sidebar-small-text{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 375px){
+  .overlapped-text{
+    font-size: 1rem;
+  }
+  .sidebarText{
+    font-size: smaller;
+    padding: 0.25rem;
+    margin: 0.25rem;
+
+}
+.sidebar-small-text{
+  font-size: x-small;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+.overlappedBox{
+  margin-left: 0rem;
+}
+}
+
 
 /* SECTION 3 */
 .section3{
@@ -216,9 +247,24 @@ height: 22%;
 
 }
 
-.section8-img-container{
+@media only screen and (max-width: 375px){
+  .section8-img-1{
+    margin-left: -50px;
+    margin-bottom:153px;
+    margin-top: 58px;
+    height: 39%;
+    width:159%;
 
+  }
+
+  .section8-img-2{
+    margin-left: -171px;
+    margin-top: 200px;
+    width: 156%;
+    height: 50%;
+  }
 }
+
 
 /* SECTION 9 */
 .section9{
@@ -270,11 +316,9 @@ height: 22%;
 
 .video-placeholder-image{
   background-image: url('../images/video-placeholder.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 25rem;
-  width: 50rem;
-  margin: auto;
+
 }
 .fire-mark{
   height: 5rem;

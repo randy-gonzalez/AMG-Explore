@@ -16,18 +16,18 @@ const OverlappedImageComparison = () => (
         </div>
         <img src={section2Bbq} className='section2-img' />
       </div>
-      <aside className="sidebar col-3 media-heading">
-        <p className="sidebar-text p-4">IN COMPARISON,
+      <aside className="sidebar col-3 small-title media-heading">
+        <p className="sidebar-small-text ">IN COMPARISON,
         THE COMPETITION
                 DISAPPEARS...</p>
 
-        <h2 className="m-4">FLAWLESS DESIGN</h2>
+        <p className="sidebarText">FLAWLESS DESIGN</p>
 
 
-        <h2 className="m-4">SUPREME VERSATILITY</h2>
+        <p className="sidebarText">SUPREME VERSATILITY</p>
 
 
-        <h2 className="m-4">UNMATCHED VALUE</h2>
+        <p className="sidebarText">UNMATCHED VALUE</p>
 
       </aside>
     </div>

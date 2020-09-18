@@ -4,7 +4,7 @@ import steaks from '../images/steaks.png';
 const OverlappingImageLongDescription = () => (
   <section className="container section8 p-5">
     <div className="d-flex flex-row justify-content-around long-container">
-      <div className="d-flex flex-column col-6 brown-text">
+      <div className="d-flex flex-column col-6 col-xs-12 brown-text">
         <p>DON'T OVERSPEND ON A KALAMAZOO.
 
 

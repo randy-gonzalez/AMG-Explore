@@ -4,7 +4,7 @@ const FeatureByFeatureComparison = () => (
   <section className="container section5 text-light">
     <div className="d-flex flex-column ">
       <strong className="text-center mt-4">THE GUIDE</strong>
-      <h2 className="text-center m-5">A feature by feature comparison with Kalamazoo shows the American Muscle Grill is the one grill you need.</h2>
+      <h2 className="text-center m-5">A feature by feature comparison with Kalamazoo shows the Muscle Grill is the one grill you need.</h2>
     </div>
     <div className="d-flex flex-row justify-content-around">
       <div className="d-flex flex-column">
@@ -24,7 +24,7 @@ const FeatureByFeatureComparison = () => (
         </ul>
       </div>
       <div className="d-flex flex-column">
-        <p className="text-center mt-5 font-weight-bold">AMERICAN MUSCLE GRILL</p>
+        <p className="text-center mt-5 font-weight-bold">MUSCLE GRILL</p>
         <ul className="list">
 
 

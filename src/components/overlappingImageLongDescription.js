@@ -9,8 +9,8 @@ const OverlappingImageLongDescription = () => (
 
 
         BEGIN YOUR OUTDOOR EXPERIENCE
-        WITH THE AMERICAN MUSCLE GRILL
-          FROM SUMMERSET GRILLS</p>
+        WITH THE MUSCLE GRILL
+          FROM AMERICAN MADE GRILLS</p>
         <div className=" d-flex section8-img-container">
           <img src={grillingSteaks} className="section8-img-1 " />
           <img src={steaks} className="section8-img-2 " />
@@ -32,10 +32,10 @@ const OverlappingImageLongDescription = () => (
         fuels under one hood. Imagine the possibility of searing
         over lump coal, sautéing over a controlled gas flame, while
         smoking simultaneously with mesquite wood-chips, and
-        still having room to spare. The American Muscle Grill is that
+        still having room to spare. The Muscle Grill is that
           solution at a fraction of the price of Kalamazoo.</p>
 
-        <p>The American Muscle Grill is all about sturdy, high-quality
+        <p>The Muscle Grill is all about sturdy, high-quality
         stainless steel construction, ridiculously high BTU output,
         anrse fuel sources. Whether on a freestanding cart or
         as the built-in centerpiece of an outdoor kitchen, this
@@ -43,7 +43,7 @@ const OverlappingImageLongDescription = () => (
         been a grill like it, nor has there ever been a cooking
           experience available to match.</p>
 
-        <p>The new 36” American Muscle Grill delivers in design and
+        <p>The new 36” Muscle Grill delivers in design and
         function, unlike any other grill available. The stylish front
         end is borrowed from the 1969 Shelby GT 350 Mustang with
         front panel LED lights. Five 22,000 BTU burners and fully

@@ -207,6 +207,7 @@ header {
   padding-right: 6rem;
   padding-left: 1rem
 }
+
 }
 
 
@@ -218,6 +219,12 @@ header {
 /* SECTION 4 */
 .section4{
  background-color: rgb(244, 244, 231);
+}
+
+@media only screen and (max-width: 375px){
+  .order-xs-2{
+    order: 2;
+  }
 }
 /* SECTION 5 */
 .section5{
@@ -247,6 +254,12 @@ margin-top: 24rem;
 width: 65%;
 height: 22%;
 
+}
+
+@media only screen and (max-width: 768px){
+  .section8-img-1{
+    margin-left: -4rem;
+  }
 }
 
 @media only screen and (max-width: 375px){

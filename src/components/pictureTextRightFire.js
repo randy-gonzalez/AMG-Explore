@@ -11,7 +11,7 @@ const PictureTextRightFire = ({
     <div className="picture-text-background py-4 container">
 
       <div className="row">
-        <div className="image col-12 col-md-6 p-5">
+        <div className="image col-12 col-md-6 p-5 order-xs-2">
           <Image filename={image} alt={primaryText} className="order-last" />
         </div>
         <div className="col-12 col-md-6 d-flex align-items-center">

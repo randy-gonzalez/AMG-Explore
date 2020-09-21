@@ -4,7 +4,7 @@ import checkMarkImage from '../images/check-mark.png'
 const ThreeCheckBoxComparison = () => (
   <section className="container section3">
     <div className="d-flex flex-column  w-100 ">
-      <p className='text-center mt-5'>THE AMERICAN MUSCLE GRILL SETS THE BAR</p>
+      <p className='text-center mt-5'>THE MUSCLE GRILL SETS THE BAR</p>
       <h2 className='text-center'>The Kalamazoo doesn't hold up.</h2>
     </div>
     <div className="d-flex flex-row justify-content-around mt-5">

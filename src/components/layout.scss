@@ -192,18 +192,20 @@ header {
     font-size: 1rem;
   }
   .sidebarText{
-    font-size: smaller;
-    padding: 0.25rem;
-    margin: 0.25rem;
-
+    padding: 0rem;
+    margin: 1rem 0rem;
+    text-align: center;
 }
 .sidebar-small-text{
-  font-size: x-small;
-  padding: 0.25rem;
-  margin: 0.25rem;
+  padding: 0rem;
+  margin: 1rem 0rem;
+  text-align: center;
+
 }
 .overlappedBox{
   margin-left: 0rem;
+  padding-right: 6rem;
+  padding-left: 1rem
 }
 }
 

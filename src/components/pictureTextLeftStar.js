@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./image"
-import starLogo from "../images/star-logo.png"
+import starLogo from "../images/star-image.png"
 
 const PictureTextLeftStar = ({ image, primaryText, secondaryText, buttonText, buttonAddress }) => (
   <div className="picture-text-background py-4 container">

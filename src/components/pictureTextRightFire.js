@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./image"
-import fireLogo from "../images/fire-logo.png"
+import fireLogo from "../images/fire-image.png"
 const PictureTextRightFire = ({
   image,
   primaryText,

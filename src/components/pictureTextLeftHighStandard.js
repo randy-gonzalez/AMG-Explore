@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "./image"
-import highStandard from "../images/high-standard-logo.png"
+import highStandard from "../images/high-standard-image.png"
 
 const PictureTextLeftHighStandard = ({ image, primaryText, secondaryText, buttonText, buttonAddress }) => (
   <div className="picture-text-background py-4 container">

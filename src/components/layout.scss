@@ -268,9 +268,36 @@ height: 22%;
 }
 
 
-/* SECTION 9 */
+/*Picture Form / success modal */
 .section9{
  background-color: rgb(0, 108, 158);
+}
+.success-message{
+  width: 21%;
+  position: absolute;
+  top: 27%;
+  transform: translateY(-50%);
+  left: 2%;
+
+}
+@media only screen and (max-width: 1024px){
+  .success-message{
+    width: 36%;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  .success-message{
+    width: 56%;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  .success-message{
+    width: 97%;
+  }
 }
 
 

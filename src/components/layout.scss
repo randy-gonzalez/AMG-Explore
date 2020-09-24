@@ -280,6 +280,12 @@ height: 22%;
   left: 2%;
 
 }
+@media only screen and (max-width: 1024px){
+  .success-message{
+    width: 36%;
+  }
+
+}
 
 @media only screen and (max-width: 768px){
   .success-message{

@@ -8,6 +8,7 @@ const HeroBlue = () => (
             THE KALAMAZOO HYBRID FIRE
          </h2>
       <p className='text-center'>DON'T OVERSPEND FOR FEWER FEATURES</p>
+
     </div>
   </section>
 )

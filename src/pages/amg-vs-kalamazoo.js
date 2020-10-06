@@ -73,6 +73,7 @@ const ctaData2 = {
 const AmgVsKalamazooLandingPage = () => (
   <Layout>
     <HeroBlue />
+    <FeatureByFeatureComparison />
     <OverlappingImageComparison />
     <ThreeCheckBoxComparison />
 
@@ -99,7 +100,7 @@ const AmgVsKalamazooLandingPage = () => (
       buttonText={pictureTextData3.buttonText}
     />
 
-    <FeatureByFeatureComparison />
+
     <TextBox
       primaryText={textBoxData.primaryText}
       secondaryText={textBoxData.secondaryText}

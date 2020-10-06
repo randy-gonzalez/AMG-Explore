@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 const FeatureByFeatureComparison = () => (
-  <section className="container section5 text-light">
+  <section className="container section5 text-light p-4">
     <div className="d-flex flex-column ">
       <strong className="mt-3">THE GUIDE</strong>
       <h2 className=" mt-3">A feature by feature comparison with Kalamazoo shows <span className="d-block">the American Muscle Grill is the one grill you need.</span></h2>

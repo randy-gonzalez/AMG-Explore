@@ -21,7 +21,7 @@ const pictureTextData1 = {
   image: "product-amg-54-cart.jpg",
   primaryText: "One Grill To Last",
   secondaryText:
-    "No More replacing grills every couple of years. The American Muscle Grill is proudly crafted and built in America using the highest standards redefining outdoor living.",
+    "No More replacing grills every couple of years. The Muscle Grill is proudly crafted and built in America using the highest standards redefining outdoor living.",
   buttonText: "Get Started",
 }
 
@@ -39,7 +39,7 @@ const pictureTextData3 = {
   image: "product-amg-54-buttons.jpg",
   primaryText: "ONE GRILL WITH UNMATCHED VALUE",
   secondaryText:
-    "Get more for less. The American Muscle Grill gives you more performance, verstaility, and features for a third of Kalamazoo's price.",
+    "Get more for less. The Muscle Grill gives you more performance, verstaility, and features for a third of Kalamazoo's price.",
   buttonText: "Get Started",
 }
 

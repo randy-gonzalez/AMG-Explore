@@ -11,7 +11,7 @@ const OverlappedImageComparison = () => (
         <div className=" overlappedBox text-center d-flex justify-content-center ">
 
           <p className="overlapped-text">
-            The American Muscle Grill is redefining outdoor living for 70% less than Kalamazoo.
+            The Muscle Grill is redefining outdoor living for 70% less than Kalamazoo.
             </p>
         </div>
         <img src={section2Bbq} className='section2-img' />

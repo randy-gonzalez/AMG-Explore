@@ -17,21 +17,21 @@ const Collections = () => (
             <div className="collection-image w-100">
               <Image
                 filename="product-amg-36.jpg"
-                alt='36" American Muscle Grill - Built-in'
+                alt='36" Muscle Grill - Built-in'
               />
             </div>
             <div className="collection-alt-image w-100">
               <Image
                 filename="product-amg-36-alt.jpg"
-                alt='36" American Muscle Grill - Built-in'
+                alt='36" Muscle Grill - Built-in'
               />
             </div>
           </div>
           <div className="text-center text-uppercase">
             <p className="product-title">
-              36" American Muscle Grill - Built-in
+              36" Muscle Grill - Built-in
             </p>
-            <p className="brand text-muted">Summerset Grills</p>
+            <p className="brand text-muted">American Made Grills</p>
             <p>
               <span className="original-price mx-2">$8,750.00</span>
               <span className="mx-2">$7,000.00</span>
@@ -53,21 +53,21 @@ const Collections = () => (
             <div className="collection-image w-100">
               <Image
                 filename="product-amg-54.jpg"
-                alt='54" American Muscle Grill - Built-in'
+                alt='54" Muscle Grill - Built-in'
               />
             </div>
             <div className="collection-alt-image w-100">
               <Image
                 filename="product-amg-54-alt.jpg"
-                alt='54" American Muscle Grill - Built-in'
+                alt='54" Muscle Grill - Built-in'
               />
             </div>
           </div>
           <div className="text-center text-uppercase">
             <p className="product-title">
-              54" American Muscle Grill - Built-in
+              54" Muscle Grill - Built-in
             </p>
-            <p className="brand text-muted">Summerset Grills</p>
+            <p className="brand text-muted">American Made Grills</p>
             <p>
               <span className="original-price mx-2">$12,150.00</span>
               <span className="mx-2">$9,700.00</span>

@@ -7,6 +7,11 @@ import CookingService from '../components/cookingService';
 import Material from '../components/material'
 import TotalBtus from '../components/total-btus';
 import Lighting from '../components/lighting';
+import Ignition from '../components/ignition';
+import WarmingRack from '../components/warmingRack';
+import Cabinent from '../components/cabinent';
+import Rotisserie from '../components/rotisserie';
+
 
 
 
@@ -47,7 +52,33 @@ const lightingData = {
   comparsonBrand: "Kalamazoo",
   comparisonLighting: "Control Panel",
   description: "Proper lighting is a must when grilling, especially during gorgeous sunsets when the ambient lighting's various shades and tones are in constant flux. Control Panel lighting is useful for illuminatign the burner controls, so you always know your settings. Interior lighting can assist in adequately seeing your food in the dark while it finishes cooking. The Muscle Grill comes with both control panel and interior lighting for a comoplete solution, whereas the Kalamazoo only included lighting in the control panel."
+}
 
+const ignitionData = {
+  image: "product-amg-54-cart.jpg",
+  AMGignitionDescription: "Solid Brass. Flame Thrower Valve, Ignition",
+  comparisonBrand: "Kalamazoo",
+  description: "Raging BTU's of cooking power means nothing if it doesn't start when you want it to start. The Muscle Grill employs Solid Brass Glame Thrower Ignition, so you can rest assured it will light quickly and safely every time. The Kalamazoo uses Electronic Hot Surface Ignition, a version of what modern water heaters use."
+}
+
+const warmingRackData = {
+  comparisonBrand: 'Kalamazoo',
+  comparisonRack: 'Flip-up Warming Rack',
+  description: "A warming rack can help when cooking multiple items to control the heat level, avoid flareups, and keep teh quicker food warm until everything is ready. Both grills include a heavy-duty Flip-up Warming Rack that can easily be flipped into place when needed or kept out of the way when not."
+}
+
+const cabinentData = {
+  image: "product-amg-54-cart.jpg",
+  comparisonBrand: "Kalamazoo",
+  comparisonDescription: "Double Door Cabinent Included",
+  description: "Storage for a grill is helpful to keep the station cleaned and organized. The Kalamazoo comes with a Double Door Cabinent included since the larger firebox requires the extra space. The Muscle Grill has several options for the cabinents so it can be customized to your install. The built-in model can be adapted into any custom grill island configuration with a matching extra-large storage drawer or double door cabinent for storage. Alternatively, the Muscle Grill's freestanding model comes with a matching cart with multiple drawers to keep everything clean and tidy."
+}
+
+const rotisserieData = {
+  image: "product-amg-54-cart.jpg",
+  comparisonBrand: "Kalamazoo",
+  comparisonRotisserie: "Rotisserie Motor Mounted in Cabinent",
+  description: "Rotisserie is a technique beloved by many, and both grills provide the utility to slow-roas over open flame with any fuel or combination thereof. The Kalamazoo includes a Rotisserie Motor in the cabinent and an Infared Burner to get that chicken just right. The Muscle Grill has an optional Rotisserie Kit that can be added to the grill if needed."
 }
 
 
@@ -92,6 +123,34 @@ const AMGComparison = () => (
     comparisonBrand={lightingData.comparsonBrand}
     comparisonLighting={lightingData.comparisonLighting}
     description={lightingData.description}
+   />
+
+   <Ignition
+    image={ignitionData.image}
+    AMGignitionDescription={ignitionData.AMGignitionDescription}
+    comparisonBrand={ignitionData.comparisonBrand}
+    comparisonDescription={ignitionData.comparisonDescription}
+    description={ignitionData.description}
+   />
+
+   <WarmingRack
+    comparisonBrand={warmingRackData.comparisonBrand}
+    comparisonRack={warmingRackData.comparisonRack}
+    description={warmingRackData.description}
+   />
+
+   <Cabinent
+    image={cabinentData.image}
+    comparisonBrand={cabinentData.comparisonBrand}
+    comparisonDescription={cabinentData.comparisonDescription}
+    description={cabinentData.description}
+   />
+
+   <Rotisserie
+    image={rotisserieData.image}
+    comparisonBrand={rotisserieData.comparisonBrand}
+    comparisonRotisserie={rotisserieData.comparisonRotisserie}
+    description={rotisserieData.description}
    />
 
 

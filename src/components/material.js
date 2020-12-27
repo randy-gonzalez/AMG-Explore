@@ -3,7 +3,7 @@ import Image from "./image"
 import checkMarkImage from '../images/check-mark.png'
 
 
-const PictureTextRight = ({
+const Material = ({
   image,
   primaryText,
   secondaryText,
@@ -18,7 +18,7 @@ const PictureTextRight = ({
           </div>
           <div className="col-12 col-md-6 d-flex align-items-center">
             <div className="text-center">
-              <p className="title text-uppercase">{primaryText}</p>
+              <p className="title text-uppercase">Material</p>
               <div className="d-flex justify-content-center">
                 <div>
                   <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
@@ -34,11 +34,6 @@ const PictureTextRight = ({
               </div>
               <p className="d-block">304 Stainless steel</p>
               <p className="description">{secondaryText}</p>
-              <a href={buttonAddress}>
-                <button className="text-uppercase mt-4 py-2 px-3">
-                  {buttonText}
-                </button>
-              </a>
             </div>
           </div>
         </div>
@@ -46,4 +41,4 @@ const PictureTextRight = ({
     </div>
   )
 
-export default PictureTextRight
+export default Material

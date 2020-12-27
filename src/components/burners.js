@@ -3,42 +3,35 @@ import Image from "./image"
 import checkMarkImage from '../images/check-mark.png'
 
 
-const PictureTextRight = ({
+const Burners = ({
   image,
-  primaryText,
-  secondaryText,
-  buttonText,
-  buttonAddress
+  AMGburnerDescription,
+  comparisonBrand,
+  comparisonDescription
+
 }) => (
     <div className="picture-text-background py-4">
       <div className="container bg-light">
         <div className="row">
           <div className="image col-12 col-md-6 p-5">
-            <Image filename={image} alt={primaryText} />
+            <Image filename={image} alt={AMGburnerDescription} />
           </div>
           <div className="col-12 col-md-6 d-flex align-items-center">
             <div className="text-center">
-              <p className="title text-uppercase">{primaryText}</p>
+              <p className="title text-uppercase">Burners</p>
               <div className="d-flex justify-content-center">
                 <div>
                   <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
                 </div>
                 <p>Muscle Grill</p>
               </div>
-              <p className="d-block">304 Stainless steel</p>
+              <p className="d-block">{AMGburnerDescription}</p>
                <div className="d-flex justify-content-center">
-                <div>
-                  <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
-                </div>
-                <p>Kalamazoo</p>
+                <p>{comparisonBrand}</p>
               </div>
               <p className="d-block">304 Stainless steel</p>
-              <p className="description">{secondaryText}</p>
-              <a href={buttonAddress}>
-                <button className="text-uppercase mt-4 py-2 px-3">
-                  {buttonText}
-                </button>
-              </a>
+              <p className="description">{comparisonDescription}</p>
+
             </div>
           </div>
         </div>
@@ -46,4 +39,4 @@ const PictureTextRight = ({
     </div>
   )
 
-export default PictureTextRight
+export default Burners

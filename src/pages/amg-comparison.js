@@ -13,6 +13,10 @@ import Cabinent from '../components/cabinent';
 import Rotisserie from '../components/rotisserie';
 import IncludedAccessories from '../components/included-accessories'
 import UniqueFeatures from '../components/unique-features';
+import Warranty from '../components/warranty'
+import AdditionalOptions from '../components/additional-options';
+import Price from '../components/price';
+import Winner from '../components/winner';
 
 
 
@@ -94,6 +98,37 @@ const featuresData = {
   comparisonBrand: "Kalamazoo",
   comparisonAccessories: "Rotisserie Motor Mounted in Cabinent",
   description: "The Muscle Grill has several unique features that seperate it from the competition. Reversible 9-Gauge V-Shaped Grates robust, stylish, and engineered for high performance, delivering added control of heat-transfer. The Muscle Grill features double-lined construction for durability and safety. Patented 12-Gauge Solid Fuel Trays are teh heart of the innovation of the Muscle Grill. With its creative Multi-Fuel Tray System, grilling with any combination of solid fuels places innovation in the chef's hands. The protective shield is a 2-in-1 burner cover and multi-fuel tray systems featuring a 12-gauge #304 stainless steel tray for charcoal or other solid fuels. The Easy-Glide Drip Tray keeps the inside of teh grill unpolluted and makes cleaning easy to maintain. Lastly, the Heavy-Duty Double-Lined, Spring Assisted Hood is a handy feature making it easy to lift and close the massive hood with a single hand."
+}
+
+const warrantyData = {
+  image: "product-amg-54-cart.jpg",
+  AMGwarranty: "Lifetime (Construction, Manufacturing, Frame, Housing, Cooking Grates, Burners, Valves, Burner Cover, Fuel Trays) One Year (All Other Parts, Components, And Electrical)",
+  comparisonBrand: "Kalamazoo",
+  comparisonWarranty: "2 Yrs. - All Parts & Labor, Limited 25 Years (Cast Brass Burners, Cooking Grates, Fabricated Steel), Limited 5 Years (SS Burners, IR Burners, Cooktop Burners, Gas Valves, Manifold Pipes & Electronic Control Boards)",
+  description: "Built for high performance, these grills are only as good as how long they last. The Muscle Grill comes with first-rate support and a Lifetime Warranty on construction and manufacturer defects, frame, cooking grates, burners, and fuel trays. All other parts and the electrical system have a one-year warranty. The Kalamazoo covers all parts and labor for two years and offers a limited 25-year warranty on cast brass burners, cooking grates, and fabricated steel. A limited five-year warranty covers other stainless steel burners, infared burners, cooktop burners, gas valves, manifold pipes and electronic systems."
+}
+
+const additionalOptionsData = {
+  image: "product-amg-54-cart.jpg",
+  AMGoptions: "Drop-in Infrared Sear Burner, Power Burner, Rotisserie Kit, Griddle",
+  comparisonBrand: 'Kalamazoo',
+  comparisonOptions: "Laser-Cut Grill Grates",
+  description: "As needed, the Muscle Grill offers several additional options for added flexibility and cooking techniques. The Drop-In Infrared Sear Burner can be used in four of the five burner locations to get that beautiful sear in just minutes, providing more cooking versatility in combination with other fuels. The Power Burner combines thecomfort of an indoor kitchen range with all the benefits fo being outside, featuring #304 stainless steel construction, 60,000 BTUs of power, heavy stainless steel grates, stainless steel lid, matching Muscle Grill front face design, and industry-top warranty. The Rotisserie Kit provides a commercial grade rotisserie with a 100lb motor that can roast virtually any fowl or cut of meat. The Muscle Grill Griddle Plate upgrades your grilling options with 312 sq. in. of #304 stainless steel grilling space, perfect for cooking breakfast, burgers, veggies, or stir-fry. The Kalamazoo offers optional Laser-Cut Grill Grates with various holes and designs, specifically designed for different meats, veggies, and fish. These heavy-duty grates offer premium heat transfer and can be mixed and matched to your preference."
+}
+
+const priceData = {
+  AMGprice: "$6,999.99",
+  comparisonBrand: "Kalamazoo",
+  comparisonPrice: "$17,995.00",
+  description: "Here at the end, the essential feature comes into view, and the Muscle Grill has a clear advantage over the Kalamazoo. The Muscle Grill is one-third of the cost of the Kalamazoo! For substantially less money, the Muscle Grill gives you more burners, more BTU's, larger cooking surface, better ignition, more lighting, more customization, included grill grates, patented fuel trays, better warranty, more options, more more more!"
+}
+
+const winnerData = {
+  image: "product-amg-54-cart.jpg",
+  title: "The Muscle Grill is unrivaled in power, flexibility, durability, and price.",
+  description: "High-performance hybrid grills are the future of grilling, and both the Muscle Grill and the Kalmazoo Hybrid Fire are terrific machines. With fantastic design and craftsmanship, these grills have set a new benchmark for outdoor kitchen appliances. The truth becomes apperant on a feature by feature comparison that the Muscle Grill is the better value between the two. It either equals or surpasses the Kalmazoo in every catagory at one-third of the price! You cannot find a better value in quality, flexibility, craftsmanship, and warranty than the Muscle Grill - it is the definitive grilling experience. The Muscle Grill is the one grill to last; the one grill that burns any fuel; the one grill with unmatched value. Transform your outdoor kitchen today with the hybrid grill that is redefining outdoor living.",
+  buttonText: "Get Started",
+  buttonAddress: "https://americanmadegrills.com/"
 }
 
 
@@ -179,6 +214,37 @@ const AMGComparison = () => (
     comparisonAccessories={featuresData.comparisonAccessories}
     description={featuresData.description}
    />
+
+  <Warranty
+    image={warrantyData.image}
+    AMGwarranty={warrantyData.AMGwarranty}
+    comparisonBrand={warrantyData.comparisonBrand}
+    comparisonWarranty={warrantyData.comparisonWarranty}
+  />
+
+  <AdditionalOptions
+    image={additionalOptionsData.image}
+    AMGoptions={additionalOptionsData.AMGoptions}
+    comparisonBrand={additionalOptionsData.comparisonBrand}
+    comparisonOptions={additionalOptionsData.comparisonOptions}
+    description={additionalOptionsData.description}
+  />
+
+  <Price
+    AMGprice={priceData.AMGprice}
+    comparisonBrand={priceData.comparisonBrand}
+    comparisonPrice={priceData.comparisonPrice}
+    description={priceData.description}
+  />
+
+  <Winner
+    image={winnerData.image}
+    title={winnerData.title}
+    description={winnerData.description}
+    buttonText={winnerData.buttonText}
+    buttonAddress={winnerData.buttonAddress}
+  />
+
 
 
 </Layout>

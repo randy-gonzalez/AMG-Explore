@@ -11,6 +11,8 @@ import Ignition from '../components/ignition';
 import WarmingRack from '../components/warmingRack';
 import Cabinent from '../components/cabinent';
 import Rotisserie from '../components/rotisserie';
+import IncludedAccessories from '../components/included-accessories'
+import UniqueFeatures from '../components/unique-features';
 
 
 
@@ -81,6 +83,18 @@ const rotisserieData = {
   description: "Rotisserie is a technique beloved by many, and both grills provide the utility to slow-roas over open flame with any fuel or combination thereof. The Kalamazoo includes a Rotisserie Motor in the cabinent and an Infared Burner to get that chicken just right. The Muscle Grill has an optional Rotisserie Kit that can be added to the grill if needed."
 }
 
+const accessoryData = {
+  comparisonBrand: "Kalamazoo",
+  comparisonAccessories: "None",
+  description: "Besides the power and craftsmanship of these fantastic grills, the Muscle Grill also includes some handy innovations and accessories. The included Grate Tool allows you to safely lift a section of grill grates to add solid fuels or manipulate them. The included leather gloves keep you protected from the incredible heat that can be achieved by combining solid and liquid fuels."
+}
+
+const featuresData = {
+  AMGfeatures: "Reversible 9-Gauge V-Shaped Grates, Double Lined Construction, Patented 12-Gauge Solid Fuel Trays, Easy-Glide Drip Tray, Heavy-Duty Double-Lined, Spring Assisted Hood",
+  comparisonBrand: "Kalamazoo",
+  comparisonAccessories: "Rotisserie Motor Mounted in Cabinent",
+  description: "The Muscle Grill has several unique features that seperate it from the competition. Reversible 9-Gauge V-Shaped Grates robust, stylish, and engineered for high performance, delivering added control of heat-transfer. The Muscle Grill features double-lined construction for durability and safety. Patented 12-Gauge Solid Fuel Trays are teh heart of the innovation of the Muscle Grill. With its creative Multi-Fuel Tray System, grilling with any combination of solid fuels places innovation in the chef's hands. The protective shield is a 2-in-1 burner cover and multi-fuel tray systems featuring a 12-gauge #304 stainless steel tray for charcoal or other solid fuels. The Easy-Glide Drip Tray keeps the inside of teh grill unpolluted and makes cleaning easy to maintain. Lastly, the Heavy-Duty Double-Lined, Spring Assisted Hood is a handy feature making it easy to lift and close the massive hood with a single hand."
+}
 
 
 
@@ -151,6 +165,19 @@ const AMGComparison = () => (
     comparisonBrand={rotisserieData.comparisonBrand}
     comparisonRotisserie={rotisserieData.comparisonRotisserie}
     description={rotisserieData.description}
+   />
+
+   <IncludedAccessories
+    comparisonBrand={accessoryData.comparisonBrand}
+    comparisonAccessories={accessoryData.comparisonAccessories}
+    description={accessoryData.description}
+   />
+
+   <UniqueFeatures
+    AMGfeatures={featuresData.AMGfeatures}
+    comparisonBrand={featuresData.comparisonBrand}
+    comparisonAccessories={featuresData.comparisonAccessories}
+    description={featuresData.description}
    />
 
 

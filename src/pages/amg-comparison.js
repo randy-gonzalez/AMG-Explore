@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../components/image';
 import Layout from '../components/layout';
 import HeroBlue from '../components/heroBlue';
 import Comparison from '../components/comparison';
@@ -18,7 +19,9 @@ import AdditionalOptions from '../components/additional-options';
 import Price from '../components/price';
 import Winner from '../components/winner';
 
-
+const images = {
+  imageOne: "AMG-54-Grates-Lifestyle.png"
+}
 
 
 const comparisonData = {
@@ -144,8 +147,10 @@ const AMGComparison = () => (
   <Material
     image={materialData.image}
     secondaryText={materialData.description}
-
   />
+
+  <Image filename={images.imageOne} alt="title" />
+
   <CookingService
     AMGgrill={cookingServiceData.AMGgrill}
     AMGinches={cookingServiceData.AMGinches}

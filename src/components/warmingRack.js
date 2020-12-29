@@ -3,28 +3,34 @@ import checkMarkImage from '../images/check-mark.png'
 
 
 const WarmingRack = ({ comparisonBrand, comparisonRack, description}) => (
-<div className="container bg-light">
+<div className="container bg-light picture-text-background mt-5">
   <div className="row">
-    <div className="col-4">
+    <div className="col-4 mt-4">
       <h2>Warming Rack</h2>
     </div>
     <div className="col-4 ">
-      <div className="d-flex">
-         <div>
-            <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+      <hr></hr>
+      <div className="d-flex flex-column mb-3">
+        <div className="d-flex ml-3">
+          <div>
+              <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+          </div>
+          <dt>Muscle Grill</dt>
         </div>
-        <p>Muscle Grill</p>
+        <ds className="ml-5">Flip-up Warming Rack</ds>
       </div>
-      <p>Flip-up Warming Rack</p>
-      <div className="d-flex">
-         <div>
+      <div className="d-flex flex-column mb-3">
+        <div className="d-flex ml-3">
+          <div>
             <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+          </div>
+          <dt>{comparisonBrand}</dt>
         </div>
-        <p>{comparisonBrand}</p>
+        <ds className="ml-5">{comparisonRack}</ds>
       </div>
-      <p>{comparisonRack}</p>
     </div>
     <div className="col-4">
+      <hr></hr>
       <p>{description}</p>
     </div>
   </div>

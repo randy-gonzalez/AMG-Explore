@@ -423,6 +423,8 @@ height: 22%;
 
 /*===== Picture + Text =====*/
 
+
+
 .picture-text-background {
   background-color: $colorSecondary;
   color: $colorTertiary;
@@ -431,7 +433,7 @@ height: 22%;
     min-height: 100%;
   }
   .title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
   }
@@ -446,6 +448,7 @@ height: 22%;
     letter-spacing: 0.2rem;
   }
 }
+
 
 /*===== Picture + Form =====*/
 

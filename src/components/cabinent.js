@@ -23,13 +23,24 @@ const Cabinent = ({
                 <p>Muscle Grill</p>
               </div>
               <p className="d-block">Optional</p>
-               <div className="d-flex justify-content-center">
-                <div>
-                  <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+
+
+               <div className="row">
+                <div className="col-2 d-flex ">
+                  <img src={checkMarkImage} alt="" srcset="" className="check-mark-small" />
+                  <p>{comparisonBrand}</p>
                 </div>
-                <p>{comparisonBrand}</p>
+                <div className="col-10 text-left">
+
+                  <dd className="">{comparisonDescription}</dd>
+                </div>
               </div>
-              <p className="d-block">{comparisonDescription}</p>
+
+
+
+
+
+
               <p className="description">{description}</p>
 
             </div>

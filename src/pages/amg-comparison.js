@@ -20,18 +20,23 @@ import Price from '../components/price';
 import Winner from '../components/winner';
 
 const images = {
-  imageOne: "AMG-54-Grates-Lifestyle.png"
+  backgroundImageOne: "AMG-54-Grates-Lifestyle.png",
+  backgroundImageTwo: "grilling-steaks.png",
+  backgroundImageThree: "warming-rack.png",
+  backgroundImageFour: "accessories.png",
+  backgroundImageFive: "unique-features.png",
+  backgroundImageSix: "price.png"
 }
 
 
 const comparisonData = {
-  image: "product-amg-54-cart.jpg",
+  image: "Product.png",
   title: "A head to head comparison of the Muscle Grill & the Kalamazoo Hybrid Fire",
   description: "This is the evaluation of premium hybrid grills that allow you to cook with any fuel or combination of fuels. Both of our participants are top tier in their own right, but how do they compare feature by feature? we will go item by item to see how they stack up against each other. The first grill is the MG36, the 36-inch Muscle Grill from American Made Grills. The second grill is the K750HB from Kalamazoo. Let's see how they line up!",
 }
 
 const materialData = {
-  image: "product-amg-54-cart.jpg",
+  image: "material-photo.png",
   description: "Durability and beauty have made 304 the hottest grade of stainless steel on the market. It is a T300 Series Austenitic Stainless Steel with a minimum of 18% chromium and 8% nickel, combined with a maximum of 0.08% carbon. This alloy is extremely durable, temperature resistant, and provides a beautiful finish.",
 }
 
@@ -50,7 +55,7 @@ const burnersData = {
 }
 
 const totalBtusData = {
-  image: "product-amg-54-cart.jpg",
+  image: "burners-photo.png",
   AMGbtus: "110,00(NG)",
   comparisonBrand: "Kalamazoo",
   comparisonBtus: "107,150(NG)",
@@ -64,7 +69,7 @@ const lightingData = {
 }
 
 const ignitionData = {
-  image: "product-amg-54-cart.jpg",
+  image: "ignition.png",
   AMGignitionDescription: "Solid Brass. Flame Thrower Valve, Ignition",
   comparisonBrand: "Kalamazoo",
   description: "Raging BTU's of cooking power means nothing if it doesn't start when you want it to start. The Muscle Grill employs Solid Brass Glame Thrower Ignition, so you can rest assured it will light quickly and safely every time. The Kalamazoo uses Electronic Hot Surface Ignition, a version of what modern water heaters use."
@@ -77,14 +82,14 @@ const warmingRackData = {
 }
 
 const cabinentData = {
-  image: "product-amg-54-cart.jpg",
+  image: "cabinent.png",
   comparisonBrand: "Kalamazoo",
   comparisonDescription: "Double Door Cabinent Included",
   description: "Storage for a grill is helpful to keep the station cleaned and organized. The Kalamazoo comes with a Double Door Cabinent included since the larger firebox requires the extra space. The Muscle Grill has several options for the cabinents so it can be customized to your install. The built-in model can be adapted into any custom grill island configuration with a matching extra-large storage drawer or double door cabinent for storage. Alternatively, the Muscle Grill's freestanding model comes with a matching cart with multiple drawers to keep everything clean and tidy."
 }
 
 const rotisserieData = {
-  image: "product-amg-54-cart.jpg",
+  image: "rotisserie.png",
   comparisonBrand: "Kalamazoo",
   comparisonRotisserie: "Rotisserie Motor Mounted in Cabinent",
   description: "Rotisserie is a technique beloved by many, and both grills provide the utility to slow-roas over open flame with any fuel or combination thereof. The Kalamazoo includes a Rotisserie Motor in the cabinent and an Infared Burner to get that chicken just right. The Muscle Grill has an optional Rotisserie Kit that can be added to the grill if needed."
@@ -104,7 +109,7 @@ const featuresData = {
 }
 
 const warrantyData = {
-  image: "product-amg-54-cart.jpg",
+  image: "warranty.png",
   AMGwarranty: "Lifetime (Construction, Manufacturing, Frame, Housing, Cooking Grates, Burners, Valves, Burner Cover, Fuel Trays) One Year (All Other Parts, Components, And Electrical)",
   comparisonBrand: "Kalamazoo",
   comparisonWarranty: "2 Yrs. - All Parts & Labor, Limited 25 Years (Cast Brass Burners, Cooking Grates, Fabricated Steel), Limited 5 Years (SS Burners, IR Burners, Cooktop Burners, Gas Valves, Manifold Pipes & Electronic Control Boards)",
@@ -112,7 +117,7 @@ const warrantyData = {
 }
 
 const additionalOptionsData = {
-  image: "product-amg-54-cart.jpg",
+  image: "additional-options.png",
   AMGoptions: "Drop-in Infrared Sear Burner, Power Burner, Rotisserie Kit, Griddle",
   comparisonBrand: 'Kalamazoo',
   comparisonOptions: "Laser-Cut Grill Grates",
@@ -127,7 +132,7 @@ const priceData = {
 }
 
 const winnerData = {
-  image: "product-amg-54-cart.jpg",
+  image: "Product.png",
   title: "The Muscle Grill is unrivaled in power, flexibility, durability, and price.",
   description: "High-performance hybrid grills are the future of grilling, and both the Muscle Grill and the Kalmazoo Hybrid Fire are terrific machines. With fantastic design and craftsmanship, these grills have set a new benchmark for outdoor kitchen appliances. The truth becomes apperant on a feature by feature comparison that the Muscle Grill is the better value between the two. It either equals or surpasses the Kalmazoo in every catagory at one-third of the price! You cannot find a better value in quality, flexibility, craftsmanship, and warranty than the Muscle Grill - it is the definitive grilling experience. The Muscle Grill is the one grill to last; the one grill that burns any fuel; the one grill with unmatched value. Transform your outdoor kitchen today with the hybrid grill that is redefining outdoor living.",
   buttonText: "Get Started",
@@ -149,7 +154,7 @@ const AMGComparison = () => (
     secondaryText={materialData.description}
   />
 
-  <Image filename={images.imageOne} alt="title" />
+  <Image filename={images.backgroundImageOne} alt="title" />
 
   <CookingService
     AMGgrill={cookingServiceData.AMGgrill}
@@ -172,6 +177,7 @@ const AMGComparison = () => (
     comparisonBtus={totalBtusData.comparisonBtus}
     description={totalBtusData.description}
    />
+  <Image filename={images.backgroundImageTwo} alt="cooking around the american muscle grill" />
 
    <Lighting
     comparisonBrand={lightingData.comparsonBrand}
@@ -186,6 +192,8 @@ const AMGComparison = () => (
     comparisonDescription={ignitionData.comparisonDescription}
     description={ignitionData.description}
    />
+
+  <Image filename={images.backgroundImageThree} alt="cooking around the american muscle grill" />
 
    <WarmingRack
     comparisonBrand={warmingRackData.comparisonBrand}
@@ -207,11 +215,15 @@ const AMGComparison = () => (
     description={rotisserieData.description}
    />
 
+  <Image filename={images.backgroundImageFour} alt="included accessories" />
+
    <IncludedAccessories
     comparisonBrand={accessoryData.comparisonBrand}
     comparisonAccessories={accessoryData.comparisonAccessories}
     description={accessoryData.description}
    />
+
+  <Image filename={images.backgroundImageFive} alt="american muscle grill unique features" />
 
    <UniqueFeatures
     AMGfeatures={featuresData.AMGfeatures}
@@ -234,6 +246,8 @@ const AMGComparison = () => (
     comparisonOptions={additionalOptionsData.comparisonOptions}
     description={additionalOptionsData.description}
   />
+
+  <Image filename={images.backgroundImageSix} alt="American Muscle grill at an affordable price" />
 
   <Price
     AMGprice={priceData.AMGprice}

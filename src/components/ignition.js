@@ -19,7 +19,7 @@ const Ignition = ({
           </div>
           <div className="col-12 col-md-6 d-flex align-items-center">
             <div className="text-center">
-              <p className="title text-uppercase">Burners</p>
+              <p className="title text-uppercase">Ignition</p>
               <div className="d-flex justify-content-center">
                 <div>
                   <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />

@@ -49,9 +49,11 @@ const cookingServiceData = {
 }
 
 const burnersData = {
-  AMGBurnerDescription: "Five (5) 14-Guage #304 Stainless Steel Burners at 22,000 BTUs each.",
+  image: 'burners-photo.png',
+  AMGburnerDescription: "Five (5) 14-Guage #304 Stainless Steel Burners at 22,000 BTUs each.",
   comparisonBrand: 'Kalamazoo',
-  comparisonDescription: 'The burners are the work center of the grill when using liquid fuels like natural gas and propane. They need to be durable, resistant to corrosion, and evenly distribute heat. Both grills feature top of the line cast burners that deliver in all three areas. The Kalamazoo feagures three cast bronze burners, while the Muscle Grill brings five heavy gauge stainless steel burners. Lack of heat will not be a problem for either grill, but the Muscle Grill edges in front here sporting two more burners for more power and control of the cooking surface.'
+  comparisonDescription: 'Three (3) Cast Bronze Burners at 25,000 BTUs each',
+  description: 'The burners are the work center of the grill when using liquid fuels like natural gas and propane. They need to be durable, resistant to corrosion, and evenly distribute heat. Both grills feature top of the line cast burners that deliver in all three areas. The Kalamazoo feagures three cast bronze burners, while the Muscle Grill brings five heavy gauge stainless steel burners. Lack of heat will not be a problem for either grill, but the Muscle Grill edges in front here sporting two more burners for more power and control of the cooking surface.'
 }
 
 const totalBtusData = {
@@ -165,9 +167,11 @@ const AMGComparison = () => (
   />
 
   <Burners
+  image={burnersData.image}
   AMGburnerDescription={burnersData.AMGburnerDescription}
   comparisonBrand={burnersData.comparisonBrand}
   comparisonDescription={burnersData.comparisonDescription}
+  description={burnersData.description}
   />
 
   <TotalBtus

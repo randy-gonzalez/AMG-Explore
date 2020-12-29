@@ -27,7 +27,7 @@ const Material = ({
                     </div>
                     <dt >Muscle Grill</dt>
                   </div>
-                  <ds className="ml-4">304 Stainless steel</ds>
+                  <ds className="ml-4 px-2">304 Stainless steel</ds>
                 </div>
                 <div className="d-flex flex-column mb-2">
                   <div className="d-flex">
@@ -36,10 +36,10 @@ const Material = ({
                     </div>
                     <dt>Kalamazoo</dt>
                   </div>
-                  <ds className="ml-4">304 Stainless steel</ds>
+                  <ds className="ml-4 px-2">304 Stainless steel</ds>
                 </div>
                 <hr className="w-50 ml-5 font-weight-bold"></hr>
-                <p className="description ml-4 w-75">{secondaryText}</p>
+                <p className="description ml-4 w-75 px-2">{secondaryText}</p>
               </div>
             </div>
           </div>

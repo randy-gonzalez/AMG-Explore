@@ -74,6 +74,7 @@ const ignitionData = {
   image: "ignition.png",
   AMGignitionDescription: "Solid Brass. Flame Thrower Valve, Ignition",
   comparisonBrand: "Kalamazoo",
+  comparisonDescription: "Electronic Hot Surface Ignition",
   description: "Raging BTU's of cooking power means nothing if it doesn't start when you want it to start. The Muscle Grill employs Solid Brass Glame Thrower Ignition, so you can rest assured it will light quickly and safely every time. The Kalamazoo uses Electronic Hot Surface Ignition, a version of what modern water heaters use."
 }
 
@@ -241,6 +242,7 @@ const AMGComparison = () => (
     AMGwarranty={warrantyData.AMGwarranty}
     comparisonBrand={warrantyData.comparisonBrand}
     comparisonWarranty={warrantyData.comparisonWarranty}
+    description={warrantyData.description}
   />
 
   <AdditionalOptions

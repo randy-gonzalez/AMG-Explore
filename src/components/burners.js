@@ -11,8 +11,8 @@ const Burners = ({
   description
 
 }) => (
-    <div className="picture-text-background py-4">
-      <div className="container-fluid bg-light">
+    <div className="picture-text-background-2 py-4">
+      <div className="container-fluid ">
         <div className="row">
           <div className="image col-12 col-md-8 p-5">
             <Image filename={image} alt={AMGburnerDescription} />
@@ -35,7 +35,7 @@ const Burners = ({
                   <ds className="ml-4 w-50 px-2">{comparisonDescription}</ds>
                 </div>
                 <hr className="w-50 ml-4"></hr>
-                <p className="description w-75 ml-4">{description}</p>
+                <p className="description w-md-75 ml-4">{description}</p>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react"
 import Image from "./image"
 
 const Comparison = ({ image, description, title  }) => (
-  <div className="picture-text-background py-4">
+  <div className="picture-text-background-2 py-4">
     <div className="container  p-5">
       <div className="row bg-light">
         <div className="col-12 col-md-6 d-flex align-items-center">

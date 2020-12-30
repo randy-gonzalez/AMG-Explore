@@ -10,8 +10,8 @@ const Material = ({
   buttonText,
   buttonAddress
 }) => (
-    <div className="picture-text-background py-4">
-      <div className="container-fluid bg-light">
+    <div className="picture-text-background-2 py-4">
+      <div className="container-fluid">
         <div className="row">
           <div className="image col-12 col-md-8 p-5">
             <Image filename={image} alt={primaryText} />
@@ -39,7 +39,7 @@ const Material = ({
                   <ds className="ml-4 px-2">304 Stainless steel</ds>
                 </div>
                 <hr className="w-50 ml-5 font-weight-bold"></hr>
-                <p className="description ml-4 w-75 px-2">{secondaryText}</p>
+                <p className="description ml-4 w-md-75 px-2">{secondaryText}</p>
               </div>
             </div>
           </div>

@@ -3,12 +3,12 @@ import checkMarkImage from '../images/check-mark.png'
 
 
 const WarmingRack = ({ comparisonBrand, comparisonRack, description}) => (
-<div className="container bg-light picture-text-background mt-5">
+<div className="container picture-text-background-2 my-5">
   <div className="row">
-    <div className="col-4 mt-4">
+    <div className="col-md-3  col-12 mt-4 ml-5 ml-md-0">
       <h2>Warming Rack</h2>
     </div>
-    <div className="col-4 ">
+    <div className="col-md-3 col-12">
       <hr></hr>
       <div className="d-flex flex-column mb-3">
         <div className="d-flex ml-3">
@@ -29,9 +29,9 @@ const WarmingRack = ({ comparisonBrand, comparisonRack, description}) => (
         <ds className="ml-5">{comparisonRack}</ds>
       </div>
     </div>
-    <div className="col-4">
+    <div className="col-md-6 col-12">
       <hr></hr>
-      <p>{description}</p>
+      <p className="mx-5 mx-md-0">{description}</p>
     </div>
   </div>
 </div>

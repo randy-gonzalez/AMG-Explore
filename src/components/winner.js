@@ -2,12 +2,12 @@ import React from "react"
 import Image from "./image"
 
 const Winner = ({ image, title, description, buttonText, buttonAddress }) => (
-  <div className="picture-text-background py-4">
+  <div className="picture-text-background-2 py-4">
     <div className="container bg-light">
       <div className="row">
         <div className="col-12 col-md-6 d-flex align-items-center">
-          <div className="text-center">
-            <h3>THE WINNER IS CLEAR</h3>
+          <div className="text-left">
+            <p className="text-secondary">THE WINNER IS CLEAR</p>
             <p className="title text-uppercase">{title}</p>
             <p className="description">{description}</p>
             <a href={buttonAddress}>
@@ -24,5 +24,4 @@ const Winner = ({ image, title, description, buttonText, buttonAddress }) => (
     </div>
   </div>
 )
-
 export default Winner

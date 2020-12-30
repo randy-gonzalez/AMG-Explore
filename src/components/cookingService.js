@@ -3,13 +3,13 @@ import checkMarkImage from '../images/check-mark.png'
 
 
 const CookingService = ({AMGgrill, AMGinches, comparisonBrand, comparisonInches, description}) => (
-<div className="container bg-light mt-5 picture-text-background">
+<div className="container  my-5 picture-text-background-2">
   <div className="row">
-    <div className="col-4 mt-4">
+    <div className="col-12 col-md-3 mt-4 ml-5 ml-md-0">
       <h2>Cooking <span className="d-block">Surface</span></h2>
     </div>
 
-    <div className="col-4 ">
+    <div className="col-md-3 col-12 ">
       <hr className=""></hr>
       <div className="d-flex flex-column mb-2">
         <div className="d-flex ml-3">
@@ -26,9 +26,9 @@ const CookingService = ({AMGgrill, AMGinches, comparisonBrand, comparisonInches,
       </div>
 
     </div>
-    <div className="col-4">
+    <div className="col-md-6 col-12">
       <hr></hr>
-      <p>{description}</p>
+      <p className="mx-5 mx-md-0">{description}</p>
     </div>
   </div>
 </div>

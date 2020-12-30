@@ -10,28 +10,31 @@ const Rotisserie = ({
   description
 
 }) => (
-    <div className="picture-text-background py-4">
-      <div className="container bg-light">
+    <div className="picture-text-background-2 py-4">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-md-6 d-flex align-items-center">
-            <div className="text-center">
-              <p className="title text-uppercase">Rotisserie</p>
-              <div className="d-flex justify-content-center">
-                <p>Muscle Grill</p>
+          <div className="col-12 col-md-4 d-flex  order-2 order-md-0">
+            <div className="ml-md-5">
+              <p className="title text-uppercase ml-5">Rotisserie</p>
+              <div className="d-flex flex-column mb-2 ml-3">
+                <ds className="px-2 ml-4">Muscle Grill</ds>
+                <ds className="px-2 ml-4">Optional Rotisserie Kit</ds>
               </div>
-              <p className="d-block">Optional Rotisserie Kit</p>
-               <div className="d-flex justify-content-center">
-                <div>
-                  <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+               <div className="d-flex flex-column mb-2 ml-3">
+                <div className="d-flex">
+                    <div>
+                      <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
+                    </div>
+                    <dt>{comparisonBrand}</dt>
+                  </div>
+                  <ds className="px-2 ml-4">{comparisonRotisserie}</ds>
                 </div>
-                <p>{comparisonBrand}</p>
-              </div>
-              <p className="d-block">{comparisonRotisserie}</p>
-              <p className="description">{description}</p>
+              <hr className="w-50 ml-5"></hr>
+              <p className="description w-md-50 ml-5">{description}</p>
 
             </div>
           </div>
-          <div className="image col-12 col-md-6 p-5">
+          <div className="image col-12 col-md-8 p-5 order-1 order-md-0">
             <Image filename={image} alt={description} />
           </div>
         </div>

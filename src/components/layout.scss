@@ -449,6 +449,30 @@ height: 22%;
   }
 }
 
+.picture-text-background-2 {
+  background-color: white;
+  color: $colorTertiary;
+  .image > * {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  button {
+    color: $colorSecondary;
+    background-color: $colorTertiary;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+}
+
 
 /*===== Picture + Form =====*/
 

@@ -23,7 +23,7 @@ const PictureForm = ({ image, primaryText, secondaryText, buttonText }) => {
       </div>
       <div className="container mt-5 mx-md-5">
         <div className="row">
-          <div className="form text-center col-12 col-md-6 col-lg-4 p-4">
+          <div className="form text-center col-12 col-lg-6 col-lg-4 p-4">
             <p className="title text-uppercase">{primaryText}</p>
             <p className="description">{secondaryText}</p>
             <form onSubmit={handleSubmit(onSubmit)} className="d-flex">

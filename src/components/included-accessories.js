@@ -5,10 +5,10 @@ import checkMarkImage from '../images/check-mark.png'
 const IncludedAccessories = ({ comparisonBrand, comparisonAccessories, description}) => (
 <div className="container my-5 picture-text-background-2">
   <div className="row">
-    <div className="col-md-3 col-12 mt-4 ml-5 ml-md-0">
+    <div className="col-lg-3 col-12 mt-4 ml-5 ml-md-0">
       <h2>Included Accessories</h2>
     </div>
-    <div className="col-md-3 col-12">
+    <div className="col-lg-3 col-12">
       <hr></hr>
       <div className="d-flex flex-column mb-2">
         <div className="d-flex ml-3">
@@ -24,9 +24,9 @@ const IncludedAccessories = ({ comparisonBrand, comparisonAccessories, descripti
         <ds className="ml-5">{comparisonAccessories}</ds>
       </div>
     </div>
-    <div className="col-md-6 col-12">
+    <div className="col-lg-6 col-12">
       <hr></hr>
-      <p className="mx-5 mx-md-0">{description}</p>
+      <p className="ml-5 ml-md-0">{description}</p>
     </div>
   </div>
 </div>

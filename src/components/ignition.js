@@ -14,10 +14,10 @@ const Ignition = ({
     <div className="picture-text-background-2 py-4">
       <div className="container-fluid">
         <div className="row">
-          <div className="image col-12 col-md-8 p-5">
+          <div className="image col-12 col-lg-8 p-5">
             <Image filename={image} alt={AMGignitionDescription} />
           </div>
-          <div className="col-12 col-md-4 d-flex align-items-center">
+          <div className="col-12 col-lg-4 d-flex align-items-center">
             <div className="text-left">
               <p className="title text-uppercase ml-5">Ignition</p>
               <div className="container">
@@ -38,7 +38,7 @@ const Ignition = ({
                 </div>
                 <hr className="w-50 ml-4"></hr>
                 <div className="container">
-                  <p className="description w-md-75 ml-3">{description}</p>
+                  <p className="description w-75 ml-3">{description}</p>
                 </div>
               </div>
             </div>

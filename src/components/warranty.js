@@ -14,10 +14,10 @@ const Warranty = ({
     <div className="picture-text-background-2 py-4">
       <div className="container-fluid">
         <div className="row">
-          <div className="image col-12 col-md-8 p-5">
+          <div className="image col-12 col-lg-8 p-5">
             <Image filename={image} alt={AMGwarranty} />
           </div>
-          <div className="col-12 col-md-4 d-flex align-items-center">
+          <div className="col-12 col-lg-4 d-flex align-items-center">
             <div className="text-left">
               <p className="title text-uppercase ml-5">Warranty</p>
               <div className="container">
@@ -28,14 +28,14 @@ const Warranty = ({
                     </div>
                     <dt>Muscle Grill</dt>
                   </div>
-                  <ds className="w-md-50 ml-4 px-2">{AMGwarranty}</ds>
+                  <ds className="w-50 ml-4 px-2">{AMGwarranty}</ds>
                 </div>
                 <div className="d-flex flex-column mb-2 mt-4">
                   <ds className="ml-4 px-2">{comparisonBrand}</ds>
-                  <ds className="ml-4 px-2 w-md-50">{comparisonWarranty}</ds>
+                  <ds className="ml-4 px-2 w-50">{comparisonWarranty}</ds>
                 </div>
-                <hr className="w-md-50 ml-4"></hr>
-                <p className="description w-md-75 ml-3 px-3">{description}</p>
+                <hr className="w-50 ml-4"></hr>
+                <p className="description w-75 ml-3 px-3">{description}</p>
               </div>
             </div>
           </div>

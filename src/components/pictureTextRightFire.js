@@ -11,10 +11,10 @@ const PictureTextRightFire = ({
     <div className="picture-text-background py-4 container">
 
       <div className="row">
-        <div className="image col-12 col-md-6 p-5">
+        <div className="image col-12 col-lg-6 p-5">
           <Image filename={image} alt={primaryText} className="order-last" />
         </div>
-        <div className="col-12 col-md-6 d-flex align-items-center">
+        <div className="col-12 col-lg-6 d-flex align-items-center">
           <div className="text-center">
             <div className='text-center'>
               <img src={fireLogo} className="check-mark" />

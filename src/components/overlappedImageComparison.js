@@ -7,7 +7,7 @@ const OverlappedImageComparison = () => (
 
     <div className="row">
 
-      <div className="hero-container col-md-9 col-xs-12 " >
+      <div className="hero-container col-lg-9 col-xs-12 " >
         <div className=" overlappedBox text-center d-flex justify-content-center ">
 
           <p className="overlapped-text">
@@ -16,7 +16,7 @@ const OverlappedImageComparison = () => (
         </div>
         <img src={section2Bbq} className='section2-img' />
       </div>
-      <aside className="sidebar col-md-3 col-xs-12 small-title media-heading">
+      <aside className="sidebar col-lg-3 col-xs-12 small-title media-heading">
         <p className="sidebar-small-text ">IN COMPARISON,
         THE COMPETITION
                 DISAPPEARS...</p>

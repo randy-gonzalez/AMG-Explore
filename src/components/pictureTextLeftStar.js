@@ -7,7 +7,7 @@ const PictureTextLeftStar = ({ image, primaryText, secondaryText, buttonText, bu
 
     <div className="row">
 
-      <div className="col-12 col-md-6 d-flex align-items-center">
+      <div className="col-12 col-lg-6 d-flex align-items-center">
 
         <div className="text-center mt-5">
           <div className="text-center">
@@ -22,7 +22,7 @@ const PictureTextLeftStar = ({ image, primaryText, secondaryText, buttonText, bu
           </a>
         </div>
       </div>
-      <div className="image col-12 col-md-6 p-5">
+      <div className="image col-12 col-lg-6 p-5">
         <Image filename={image} alt={primaryText} />
       </div>
     </div>

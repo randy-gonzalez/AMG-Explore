@@ -5,7 +5,7 @@ const PictureTextLeft = ({ image, primaryText, secondaryText, buttonText, button
   <div className="picture-text-background py-4">
     <div className="container bg-light">
       <div className="row">
-        <div className="col-12 col-md-6 d-flex align-items-center">
+        <div className="col-12 col-lg-6 d-flex align-items-center">
           <div className="text-center">
             <p className="title text-uppercase">{primaryText}</p>
             <p className="description">{secondaryText}</p>
@@ -16,7 +16,7 @@ const PictureTextLeft = ({ image, primaryText, secondaryText, buttonText, button
             </a>
           </div>
         </div>
-        <div className="image col-12 col-md-6 p-5">
+        <div className="image col-12 col-lg-6 p-5">
           <Image filename={image} alt={primaryText} />
         </div>
       </div>

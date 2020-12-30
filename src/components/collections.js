@@ -4,7 +4,7 @@ import Image from "./image"
 const Collections = () => (
   <section id="collections" className="container py-4">
     <div className="row">
-      <div className="collection col-12 col-md-6">
+      <div className="collection col-12 col-lg-6">
         <a
           href="https://americanmadegrills.com/collections/american-muscle-grill-series/products/36-american-muscle-grill-built-in"
           className="d-flex flex-column justify-content-between h-100"
@@ -40,7 +40,7 @@ const Collections = () => (
           </div>
         </a>
       </div>
-      <div className="collection col-12 col-md-6">
+      <div className="collection col-12 col-lg-6">
         <a
           href="https://americanmadegrills.com/collections/american-muscle-grill-series/products/54-american-muscle-grill-built-in"
           className="d-flex flex-column justify-content-between h-100"

@@ -5,6 +5,7 @@ import checkMarkImage from '../images/check-mark.png'
 
 const Ignition = ({
   image,
+  AMGproduct,
   AMGignitionDescription,
   comparisonBrand,
   comparisonDescription,
@@ -26,7 +27,7 @@ const Ignition = ({
                     <div>
                       <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
                   </div>
-                  <dt>Muscle Grill</dt>
+                  <dt>{AMGproduct}</dt>
                 </div>
                   <ds className="w-50 ml-4 px-2">{AMGignitionDescription}</ds>
               </div>

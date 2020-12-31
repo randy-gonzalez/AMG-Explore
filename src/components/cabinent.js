@@ -5,8 +5,10 @@ import checkMarkImage from '../images/check-mark.png'
 
 const Cabinent = ({
   image,
+  AMGproduct,
+  AMGcabinent,
   comparisonBrand,
-  comparisonDescription,
+  comparisonCabinent,
   description
 
 }) => (
@@ -20,8 +22,8 @@ const Cabinent = ({
             <div className="text-left">
               <p className="title text-uppercase ml-5">Cabinent</p>
               <div className="d-flex flex-column mb-2">
-                <ds className="ml-4 px-4">Muscle Grill</ds>
-                <ds className="ml-4 px-4">Optional</ds>
+                <ds className="ml-4 px-4">{AMGproduct}</ds>
+                <ds className="ml-4 px-4">{AMGcabinent}</ds>
               </div>
               <div className="container">
                <div className="d-flex flex-column mb-2">
@@ -31,7 +33,7 @@ const Cabinent = ({
                   </div>
                   <dt>{comparisonBrand}</dt>
                 </div>
-                <ds className="w-md-50 ml-4 px-2">{comparisonDescription}</ds>
+                <ds className="w-md-50 ml-4 px-2">{comparisonCabinent}</ds>
               </div>
               <hr className="w-50 ml-4"></hr>
               <p className="description w-75 ml-4 pl-2 ml-md-3 pl-md-0 px-md-3">{description}</p>

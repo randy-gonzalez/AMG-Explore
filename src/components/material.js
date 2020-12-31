@@ -4,17 +4,19 @@ import checkMarkImage from '../images/check-mark.png'
 
 
 const Material = ({
+  AMGproduct,
+  AMGmaterial,
   image,
-  primaryText,
-  secondaryText,
-  buttonText,
-  buttonAddress
+  comparisonBrand,
+  comparisonMaterial,
+  description
+
 }) => (
     <div className="picture-text-background-2 py-4">
       <div className="container-fluid">
         <div className="row">
           <div className="image col-12 col-lg-8 p-5">
-            <Image filename={image} alt={primaryText} />
+            <Image filename={image} alt={description} />
           </div>
           <div className="col-12 col-lg-4 d-flex align-items-center">
             <div className="text-left">
@@ -25,21 +27,21 @@ const Material = ({
                     <div>
                       <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
                     </div>
-                    <dt >Muscle Grill</dt>
+                    <dt >{AMGproduct}</dt>
                   </div>
-                  <ds className="ml-4 px-2">304 Stainless steel</ds>
+                  <ds className="ml-4 px-2">{AMGmaterial}</ds>
                 </div>
                 <div className="d-flex flex-column mb-2">
                   <div className="d-flex">
                     <div>
                       <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
                     </div>
-                    <dt>Kalamazoo</dt>
+                    <dt>{comparisonBrand}</dt>
                   </div>
-                  <ds className="ml-4 px-2">304 Stainless steel</ds>
+                  <ds className="ml-4 px-2">{comparisonMaterial}</ds>
                 </div>
                 <hr className="w-50 ml-5 font-weight-bold"></hr>
-                <p className="description ml-4 w-75 px-2">{secondaryText}</p>
+                <p className="description ml-4 w-75 px-2">{description}</p>
               </div>
             </div>
           </div>

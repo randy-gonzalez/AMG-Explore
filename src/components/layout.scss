@@ -14,6 +14,8 @@ $colorSecondary: #f5f3e7;
 
 $colorTertiary: #006197;
 
+$greyText: #676e72;
+
 /*===== Typography =====*/
 
 @font-face {
@@ -37,6 +39,9 @@ $colorTertiary: #006197;
 }
 
 /*===== Global Styles =====*/
+html, body {
+  overflow-x: hidden;
+}
 
 body * {
   font-family: "Barlow SC";
@@ -451,7 +456,7 @@ height: 22%;
 
 .picture-text-background-2 {
   background-color: white;
-  color: $colorTertiary;
+  color: $greyText;
   .image > * {
     min-width: 100%;
     min-height: 100%;
@@ -460,6 +465,7 @@ height: 22%;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
+    color: $colorTertiary;
   }
   .description {
     font-size: 1rem;
@@ -472,6 +478,10 @@ height: 22%;
     letter-spacing: 0.2rem;
   }
 }
+.blue-text{
+  color: $colorTertiary
+}
+
 
 
 /*===== Picture + Form =====*/

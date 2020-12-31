@@ -5,6 +5,7 @@ import checkMarkImage from '../images/check-mark.png'
 
 const Warranty = ({
   image,
+  AMGproduct,
   AMGwarranty,
   comparisonBrand,
   comparisonWarranty,
@@ -26,7 +27,7 @@ const Warranty = ({
                     <div>
                       <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
                     </div>
-                    <dt>Muscle Grill</dt>
+                    <dt>{AMGproduct}</dt>
                   </div>
                   <ds className="w-50 ml-4 px-2">{AMGwarranty}</ds>
                 </div>
@@ -35,7 +36,7 @@ const Warranty = ({
                   <ds className="ml-4 px-2 w-50">{comparisonWarranty}</ds>
                 </div>
                 <hr className="w-50 ml-4"></hr>
-                <p className="description w-75 ml-3 px-3">{description}</p>
+                <p className="description  ml-3 px-3">{description}</p>
               </div>
             </div>
           </div>

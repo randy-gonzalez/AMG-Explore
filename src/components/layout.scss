@@ -8,11 +8,13 @@ $colorPrice: #1c1d1d;
 
 $colorPriceSavings: #ff4e4e;
 
-$colorPrimary: #b86028;
+$colorPrimary: #006197;
 
-$colorSecondary: #f5f3e7;
+$colorSecondary: #ffffff;
 
 $colorTertiary: #006197;
+
+$greyText: #676e72;
 
 /*===== Typography =====*/
 
@@ -37,6 +39,27 @@ $colorTertiary: #006197;
 }
 
 /*===== Global Styles =====*/
+html, body {
+  overflow-x: hidden;
+}
+// .carousel-item{
+//  -webkit-transition: opacity 3s ease-out;
+//     -moz-transition: opacity 3s ease-out;
+//     -ms-transition: opacity 3s ease-out;
+//     -o-transition: opacity 3s ease-out;
+//      opacity: 0.75;
+// }
+
+
+
+
+hr {
+  border: none;
+  height: 1px;
+  color: #333;
+  width: 50%;
+  background-color: #333;
+}
 
 body * {
   font-family: "Barlow SC";
@@ -80,7 +103,9 @@ header {
     transition: width 0.5s ease-in-out;
   }
 }
-
+.header-element{
+  background-color: rgb(249, 248, 244)
+}
 /*===== Hero =====*/
 
 .hero {
@@ -451,7 +476,7 @@ height: 22%;
 
 .picture-text-background-2 {
   background-color: white;
-  color: $colorTertiary;
+  color: $greyText;
   .image > * {
     min-width: 100%;
     min-height: 100%;
@@ -460,6 +485,7 @@ height: 22%;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
+    color: $colorTertiary;
   }
   .description {
     font-size: 1rem;
@@ -472,6 +498,10 @@ height: 22%;
     letter-spacing: 0.2rem;
   }
 }
+.blue-text{
+  color: $colorTertiary
+}
+
 
 
 /*===== Picture + Form =====*/

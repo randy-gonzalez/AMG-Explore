@@ -2,11 +2,11 @@ import React from 'react';
 import checkMarkImage from '../images/check-mark.png'
 
 
-const WarmingRack = ({ comparisonBrand, comparisonRack, description}) => (
+const WarmingRack = ({AMGproduct, AMGrack, comparisonBrand, comparisonRack, description}) => (
 <div className="container picture-text-background-2 my-5">
   <div className="row">
     <div className="col-lg-3  col-12 mt-4 ml-5 ml-md-0">
-      <h2>Warming Rack</h2>
+      <h2 className="blue-text">Warming Rack</h2>
     </div>
     <div className="col-lg-3 col-12">
       <hr></hr>
@@ -15,9 +15,9 @@ const WarmingRack = ({ comparisonBrand, comparisonRack, description}) => (
           <div>
               <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
           </div>
-          <dt>Muscle Grill</dt>
+          <dt>{AMGproduct}</dt>
         </div>
-        <ds className="ml-5">Flip-up Warming Rack</ds>
+        <ds className="ml-5">{AMGrack}</ds>
       </div>
       <div className="d-flex flex-column mb-3">
         <div className="d-flex ml-3">

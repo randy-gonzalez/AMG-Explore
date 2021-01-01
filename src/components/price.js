@@ -2,11 +2,11 @@ import React from 'react';
 import checkMarkImage from '../images/check-mark.png'
 
 
-const Price = ({ AMGprice, comparisonBrand, comparisonPrice, description}) => (
+const Price = ({ AMGproduct, AMGprice, comparisonBrand, comparisonPrice, description}) => (
 <div className="container mt-5 picture-text-background-2">
   <div className="row">
     <div className="col-lg-3 col-12 mt-4 ml-5 ml-md-0">
-      <h2>Price</h2>
+      <h2 className="blue-text">Price</h2>
     </div>
     <div className="col-lg-3 col-12">
       <hr className="w-50 ml-2"></hr>
@@ -15,7 +15,7 @@ const Price = ({ AMGprice, comparisonBrand, comparisonPrice, description}) => (
           <div>
               <img src={checkMarkImage} alt="" srcset="" className="check-mark-small mx-2" />
           </div>
-          <dt>Muscle Grill</dt>
+          <dt>{AMGproduct}</dt>
         </div>
         <ds className="ml-5">{AMGprice}</ds>
       </div>
@@ -26,7 +26,7 @@ const Price = ({ AMGprice, comparisonBrand, comparisonPrice, description}) => (
     </div>
     <div className="col-lg-6 col-12">
       <hr></hr>
-      <p className="description w-75 ml-5 mr-2 mr-md-0">{description}</p>
+      <p className="description ml-5 mr-2 mr-md-0">{description}</p>
     </div>
   </div>
 </div>

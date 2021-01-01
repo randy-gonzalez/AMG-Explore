@@ -2,7 +2,7 @@ import React from "react"
 import Image from "./image"
 
 const Header = ({ data }) => (
-  <header className="py-4 d-flex align-items-center">
+  <header className="py-4 header-element d-flex align-items-center">
     <div className="container">
       <nav className="row">
         <div className="col-12 col-lg-4 mt-4 mt-lg-0 order-2 order-lg-1 d-flex justify-content-center justify-content-lg-end align-items-center">

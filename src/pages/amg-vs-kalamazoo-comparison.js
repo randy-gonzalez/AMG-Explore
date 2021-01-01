@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 import Image from '../components/image';
 import Layout from '../components/layout';
 import HeroBlue from '../components/heroBlue';
@@ -36,9 +37,10 @@ const comparisonData = {
 }
 
 const materialData = {
-  image: "material-photo.png",
+  AMGimage: "material-photo.png",
   AMGproduct: "MUSCLE GRILL",
   AMGmaterial: "304 Stainless Steel",
+  comparisonImage: "kalamazoo-cabinents.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonMaterial: "304 Stainless Steel",
   description: "Durability and beauty have made 304 the hottest grade of stainless steel on the market. It is a T300 Series Austenitic Stainless Steel with a minimum of 18% chromium and 8% nickel, combined with a maximum of 0.08% carbon. This alloy is extremely durable, temperature resistant, and provides a beautiful finish.",
@@ -53,18 +55,20 @@ const cookingServiceData = {
 }
 
 const burnersData = {
-  image: 'burners-photo.png',
+  AMGimage: 'burners-photo.png',
   AMGproduct: "MUSCLE GRILL",
   AMGburnerDescription: "Five (5) 14-Guage #304 Stainless Steel Burners at 22,000 BTUs each.",
+  comparisonImage: "kalamazoo-burners.png",
   comparisonBrand: 'KALAMAZOO',
   comparisonDescription: 'Three (3) Cast Bronze Burners at 25,000 BTUs each',
   description: 'The burners are the work center of the grill when using liquid fuels like natural gas and propane. They need to be durable, resistant to corrosion, and evenly distribute heat. Both grills feature top of the line cast burners that deliver in all three areas. The Kalamazoo feagures three cast bronze burners, while the Muscle Grill brings five heavy gauge stainless steel burners. Lack of heat will not be a problem for either grill, but the Muscle Grill edges in front here sporting two more burners for more power and control of the cooking surface.'
 }
 
 const totalBtusData = {
-  image: "burners-photo.png",
+  AMGimage: "burners-photo.png",
   AMGproduct: "MUSCLE GRILL",
   AMGbtus: "110,00(NG)",
+  comparisonImage: "kalamazoo-steaks.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonBtus: "107,150(NG)",
   description: "Total BTU's on a grill is like comparing total horsepower between cars. More power means a better experience. With a high Total BTU rating, you get better ehat transfer, faster preheat process, less sticking, uniform cooking, and simply better food. The Muscle Grill edges ahead here as well, with 110,000 total BTU's from it's five stainless steel burners. The Kalamazoo is closely behind with 107,150 total BTU's."
@@ -79,9 +83,10 @@ const lightingData = {
 }
 
 const ignitionData = {
-  image: "ignition.png",
+  AMGimage: "ignition.png",
   AMGproduct: "MUSCLE GRILL",
   AMGignitionDescription: "Solid Brass. Flame Thrower Valve, Ignition",
+  comparisonImage: "hybrid-fire-functionality.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonDescription: "Electronic Hot Surface Ignition",
   description: "Raging BTU's of cooking power means nothing if it doesn't start when you want it to start. The Muscle Grill employs Solid Brass Glame Thrower Ignition, so you can rest assured it will light quickly and safely every time. The Kalamazoo uses Electronic Hot Surface Ignition, a version of what modern water heaters use."
@@ -96,18 +101,20 @@ const warmingRackData = {
 }
 
 const cabinentData = {
-  image: "cabinent.png",
+  AMGimage: "cabinent.png",
   AMGproduct: "MUSCLE GRILL",
   AMGcabinent: "Optional",
+  comparisonImage: "hybrid-fire-grill.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonCabinent: "Double Door Cabinent Included",
   description: "Storage for a grill is helpful to keep the station cleaned and organized. The Kalamazoo comes with a Double Door Cabinent included since the larger firebox requires the extra space. The Muscle Grill has several options for the cabinents so it can be customized to your install. The built-in model can be adapted into any custom grill island configuration with a matching extra-large storage drawer or double door cabinent for storage. Alternatively, the Muscle Grill's freestanding model comes with a matching cart with multiple drawers to keep everything clean and tidy."
 }
 
 const rotisserieData = {
-  image: "rotisserie.png",
+  AMGimage: "rotisserie.png",
   AMGproduct: "MUSCLE GRILL",
   AMGrotisserie: "Optional Rotisserie Kit",
+  comparisonImage: "kalamazoo-rotisserie.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonRotisserie: "Rotisserie Motor Mounted in Cabinent",
   description: "Rotisserie is a technique beloved by many, and both grills provide the utility to slow-roas over open flame with any fuel or combination thereof. The Kalamazoo includes a Rotisserie Motor in the cabinent and an Infared Burner to get that chicken just right. The Muscle Grill has an optional Rotisserie Kit that can be added to the grill if needed."
@@ -130,18 +137,20 @@ const featuresData = {
 }
 
 const warrantyData = {
-  image: "warranty.png",
+  AMGimage: "warranty.png",
   AMGproduct: "MUSCLE GRILL",
   AMGwarranty: "Lifetime (Construction, Manufacturing, Frame, Housing, Cooking Grates, Burners, Valves, Burner Cover, Fuel Trays) One Year (All Other Parts, Components, And Electrical)",
+  comparisonImage: "kalamazoo-cabinents.jpg",
   comparisonBrand: "KALAMAZOO",
   comparisonWarranty: "2 Yrs. - All Parts & Labor, Limited 25 Years (Cast Brass Burners, Cooking Grates, Fabricated Steel), Limited 5 Years (SS Burners, IR Burners, Cooktop Burners, Gas Valves, Manifold Pipes & Electronic Control Boards)",
   description: "Built for high performance, these grills are only as good as how long they last. The Muscle Grill comes with first-rate support and a Lifetime Warranty on construction and manufacturer defects, frame, cooking grates, burners, and fuel trays. All other parts and the electrical system have a one-year warranty. The Kalamazoo covers all parts and labor for two years and offers a limited 25-year warranty on cast brass burners, cooking grates, and fabricated steel. A limited five-year warranty covers other stainless steel burners, infared burners, cooktop burners, gas valves, manifold pipes and electronic systems."
 }
 
 const additionalOptionsData = {
-  image: "additional-options.png",
+  AMGimage: "additional-options.png",
   AMGproduct: "MUSCLE GRILL",
   AMGoptions: "Drop-in Infrared Sear Burner, Power Burner, Rotisserie Kit, Griddle",
+  comparisonImage: "kalamazoo-wood.jpg",
   comparisonBrand: 'KALAMAZOO',
   comparisonOptions: "Laser-Cut Grill Grates",
   description: "As needed, the Muscle Grill offers several additional options for added flexibility and cooking techniques. The Drop-In Infrared Sear Burner can be used in four of the five burner locations to get that beautiful sear in just minutes, providing more cooking versatility in combination with other fuels. The Power Burner combines thecomfort of an indoor kitchen range with all the benefits fo being outside, featuring #304 stainless steel construction, 60,000 BTUs of power, heavy stainless steel grates, stainless steel lid, matching Muscle Grill front face design, and industry-top warranty. The Rotisserie Kit provides a commercial grade rotisserie with a 100lb motor that can roast virtually any fowl or cut of meat. The Muscle Grill Griddle Plate upgrades your grilling options with 312 sq. in. of #304 stainless steel grilling space, perfect for cooking breakfast, burgers, veggies, or stir-fry. The Kalamazoo offers optional Laser-Cut Grill Grates with various holes and designs, specifically designed for different meats, veggies, and fish. These heavy-duty grates offer premium heat transfer and can be mixed and matched to your preference."
@@ -174,15 +183,18 @@ const AMGComparison = () => (
   />
 
   <Material
-    image={materialData.image}
+    AMGimage={materialData.AMGimage}
     description={materialData.description}
     AMGproduct={materialData.AMGproduct}
     AMGmaterial={materialData.AMGmaterial}
+    comparisonImage={materialData.comparisonImage}
     comparisonBrand={materialData.comparisonBrand}
     comparisonMaterial={materialData.comparisonMaterial}
   />
 
   <Image filename={images.backgroundImageOne} alt="title" />
+
+
 
   <CookingService
     AMGproduct={cookingServiceData.AMGproduct}
@@ -193,18 +205,20 @@ const AMGComparison = () => (
   />
 
   <Burners
-  image={burnersData.image}
+  AMGimage={burnersData.AMGimage}
   AMGproduct={burnersData.AMGproduct}
   AMGburnerDescription={burnersData.AMGburnerDescription}
+  comparisonImage={burnersData.comparisonImage}
   comparisonBrand={burnersData.comparisonBrand}
   comparisonDescription={burnersData.comparisonDescription}
   description={burnersData.description}
   />
 
   <TotalBtus
-    image={totalBtusData.image}
+    AMGimage={totalBtusData.AMGimage}
     AMGproduct={totalBtusData.AMGproduct}
     AMGbtus={totalBtusData.AMGbtus}
+    comparisonImage={totalBtusData.comparisonImage}
     comparisonBrand={totalBtusData.comparisonBrand}
     comparisonBtus={totalBtusData.comparisonBtus}
     description={totalBtusData.description}
@@ -221,9 +235,10 @@ const AMGComparison = () => (
    />
 
    <Ignition
-    image={ignitionData.image}
+    AMGimage={ignitionData.AMGimage}
     AMGproduct={ignitionData.AMGproduct}
     AMGignitionDescription={ignitionData.AMGignitionDescription}
+    comparisonImage={ignitionData.comparisonImage}
     comparisonBrand={ignitionData.comparisonBrand}
     comparisonDescription={ignitionData.comparisonDescription}
     description={ignitionData.description}
@@ -242,16 +257,18 @@ const AMGComparison = () => (
    <Cabinent
     AMGproduct={cabinentData.AMGproduct}
     AMGcabinent={cabinentData.AMGcabinent}
-    image={cabinentData.image}
+    AMGimage={cabinentData.AMGimage}
+    comparisonImage={cabinentData.comparisonImage}
     comparisonBrand={cabinentData.comparisonBrand}
     comparisonCabinent={cabinentData.comparisonCabinent}
     description={cabinentData.description}
    />
 
    <Rotisserie
-    image={rotisserieData.image}
+    AMGimage={rotisserieData.AMGimage}
     AMGproduct={rotisserieData.AMGproduct}
     AMGrotisserie={rotisserieData.AMGrotisserie}
+    comparisonImage={rotisserieData.comparisonImage}
     comparisonBrand={rotisserieData.comparisonBrand}
     comparisonRotisserie={rotisserieData.comparisonRotisserie}
     description={rotisserieData.description}
@@ -278,18 +295,20 @@ const AMGComparison = () => (
    />
 
   <Warranty
-    image={warrantyData.image}
+    AMGimage={warrantyData.AMGimage}
     AMGproduct={warrantyData.AMGproduct}
     AMGwarranty={warrantyData.AMGwarranty}
+    comparisonImage={warrantyData.comparisonImage}
     comparisonBrand={warrantyData.comparisonBrand}
     comparisonWarranty={warrantyData.comparisonWarranty}
     description={warrantyData.description}
   />
 
   <AdditionalOptions
-    image={additionalOptionsData.image}
+    AMGimage={additionalOptionsData.AMGimage}
     AMGproduct={additionalOptionsData.AMGproduct}
     AMGoptions={additionalOptionsData.AMGoptions}
+    comparisonImage={additionalOptionsData.comparisonImage}
     comparisonBrand={additionalOptionsData.comparisonBrand}
     comparisonOptions={additionalOptionsData.comparisonOptions}
     description={additionalOptionsData.description}

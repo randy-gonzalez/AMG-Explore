@@ -1,12 +1,15 @@
 import React from "react"
 import Image from "./image"
 import checkMarkImage from '../images/check-mark.png'
+import { Carousel } from 'react-bootstrap';
+
 
 
 const Cabinent = ({
-  image,
+  AMGimage,
   AMGproduct,
   AMGcabinent,
+  comparisonImage,
   comparisonBrand,
   comparisonCabinent,
   description
@@ -16,7 +19,14 @@ const Cabinent = ({
       <div className="container-fluid">
         <div className="row">
           <div className="image col-12 col-lg-8 p-5">
-            <Image filename={image} alt={description} />
+            <Carousel fade={true} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
+              <Carousel.Item>
+                <Image filename={AMGimage} alt={AMGproduct} />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image filename={comparisonImage} alt={comparisonBrand}/>
+              </Carousel.Item>
+            </Carousel>
           </div>
           <div className="col-12 col-lg-4 d-flex align-items-center">
             <div className="text-left">

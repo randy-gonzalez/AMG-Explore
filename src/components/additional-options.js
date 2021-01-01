@@ -1,12 +1,16 @@
 import React from "react"
 import Image from "./image"
-import checkMarkImage from '../images/check-mark.png'
+import checkMarkImage from '../images/check-mark.png';
+import { Carousel } from 'react-bootstrap';
+
+
 
 
 const AdditionalOptions = ({
-  image,
+  AMGimage,
   AMGproduct,
   AMGoptions,
+  comparisonImage,
   comparisonBrand,
   comparisonOptions,
   description
@@ -36,7 +40,14 @@ const AdditionalOptions = ({
             </div>
           </div>
           <div className="image col-12 col-lg-8 p-5 order-1  order-lg-0">
-            <Image filename={image} alt={AMGoptions} />
+            <Carousel fade={true} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
+              <Carousel.Item>
+                <Image filename={AMGimage} alt={AMGproduct} />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image filename={comparisonImage} alt={comparisonBrand} />
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>

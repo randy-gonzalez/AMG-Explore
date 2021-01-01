@@ -1,12 +1,14 @@
 import React from "react"
 import Image from "./image"
 import checkMarkImage from '../images/check-mark.png'
+import { Carousel } from 'react-bootstrap';
 
 
 const TotalBtus = ({
-  image,
+  AMGimage,
   AMGproduct,
   AMGbtus,
+  comparisonImage,
   comparisonBrand,
   comparisonBtus,
   description
@@ -37,7 +39,14 @@ const TotalBtus = ({
             </div>
           </div>
           <div className="image col-12 col-lg-8 p-5 order-1  order-lg-0">
-            <Image filename={image} alt={AMGbtus} />
+             <Carousel fade={true} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
+              <Carousel.Item>
+                <Image filename={AMGimage} alt={AMGbtus} />
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image filename={comparisonImage} alt="title" />
+              </Carousel.Item>
+            </Carousel>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const Header = ({ data }) => (
         </div>
         <div className="col-12 col-lg-4 order-1 order-lg-2">
           <a href="https://americanmadegrills.com">
-            <Image filename="logo-wordmark.png" alt="American Made Grills" />
+            <Image filename="amg-blue-title.png" alt="American Made Grills" />
           </a>
         </div>
         <div className="col-12 col-lg-4 order-3 d-flex justify-content-center justify-content-lg-start align-items-center">
@@ -44,7 +44,7 @@ const Header = ({ data }) => (
                 className="d-flex"
               >
                 <span className="nav-icon mr-1">
-                  <Image filename="icon-search.png" alt="Search" />
+                  <Image filename="blue-search-icon.png" alt="Search" />
                 </span>
                 Search
               </a>
@@ -53,7 +53,7 @@ const Header = ({ data }) => (
             <li className="mx-lg-4 text-center text-lg-left">
               <a href="https://americanmadegrills.com/cart" className="d-flex">
                 <span className="nav-icon mr-1">
-                  <Image filename="icon-cart.png" alt="Cart" />
+                  <Image filename="blue-cart.png" alt="Cart" />
                 </span>
                 Cart
               </a>

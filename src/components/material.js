@@ -18,7 +18,7 @@ const Material = ({
       <div className="container-fluid">
         <div className="row">
           <div className="image col-12 col-lg-8 p-5">
-            <Carousel fade={true} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
+            <Carousel fade={true} pause={false} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
               <Carousel.Item>
                 <Image filename={AMGimage} alt="title" />
               </Carousel.Item>

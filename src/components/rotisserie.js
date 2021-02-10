@@ -39,7 +39,7 @@ const Rotisserie = ({
             </div>
           </div>
           <div className="image col-12 col-lg-8 p-5 order-1 order-lg-0">
-            <Carousel fade={true} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
+            <Carousel fade={true} pause={false} interval={3000} slide={true} controls={false} indicators={false} className="fade-1">
               <Carousel.Item>
                 <Image filename={AMGimage} alt={AMGproduct} />
               </Carousel.Item>

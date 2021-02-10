@@ -5,6 +5,9 @@ var plugins = [{
       plugin: require('/Users/krisringler/shyft/AMG-Explore/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/krisringler/shyft/AMG-Explore/node_modules/gatsby-plugin-facebook-pixel/gatsby-ssr'),
+      options: {"plugins":[],"pixelId":"449592216410502"},
+    },{
       plugin: require('/Users/krisringler/shyft/AMG-Explore/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/logo-orange.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"cd93b53b1fb25ce03dd1047db38e3c32"},
     },{
